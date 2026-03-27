@@ -1,0 +1,89 @@
+baseURL: "https://jinge.pages.dev/"
+languageCode: zh-cn
+title: "金哥的思考"
+theme: PaperMod
+
+defaultContentLanguage: zh
+
+params:
+  env: production
+  description: "投资 · AI · 持续行动"
+  author: "金哥"
+  
+  # 主题设置
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowToc: true
+  TocOpen: false
+  
+  # 首页设置
+  homeInfoParams:
+    Title: "金哥的思考"
+    Content: >
+      投资人 / 创业者 / 持续行动者
+      
+      
+      分区间定投体系创始人 · AI工具深度玩家 · 写作爱好者
+      
+      
+      "做在最多数量的平行宇宙中都能成功的事情。"
+
+  # 社交链接
+  socialIcons:
+    - name: twitter
+      url: "https://x.com/"
+    - name: github
+      url: "https://github.com/"
+
+  # 搜索
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# 菜单
+menu:
+  main:
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 5
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 15
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 20
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 25
+
+# 输出格式
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# Markdown渲染
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false

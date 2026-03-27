@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>金哥的思考</title>
+    <link>https://jinge.pages.dev/</link>
+    <description>Recent content on 金哥的思考</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jinge.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于我</title>
+      <link>https://jinge.pages.dev/about/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://jinge.pages.dev/about/</guid>
+      <description>&lt;h2 id=&#34;金哥&#34;&gt;金哥&lt;/h2&gt;
+&lt;p&gt;投资人 / 创业者 / 持续行动者&lt;/p&gt;
+&lt;h3 id=&#34;核心理念&#34;&gt;核心理念&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;分区间定投&lt;/strong&gt;：用链上数据+技术指标划分区间，量化择时定投&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用系统对抗人性&lt;/strong&gt;：把感性判断翻译成理性规则，让系统替代直觉&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;持续行动&lt;/strong&gt;：可以慢，不要停。007写作社群3年周更近200篇&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;信条&#34;&gt;信条&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;做在最多数量的平行宇宙中都能成功的事情。&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;远远不到拼认知的程度，先做了再说。&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;模糊的正确 &amp;gt; 精确的错误&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>降低摸机率，靠的不是自律，而是用&#34;生产系统&#34;碾压&#34;消费系统&#34;</title>
+      <link>https://jinge.pages.dev/posts/production-system-beats-consumption/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://jinge.pages.dev/posts/production-system-beats-consumption/</guid>
+      <description>解法不是继续在手机内部抵抗手机，而是迁移。不是强迫自己去讨厌手机，而是让自己重新爱上电脑。</description>
+    </item>
+  </channel>
+</rss>
