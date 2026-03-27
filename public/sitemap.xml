@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jinge.pages.dev/about/</loc>
+    <loc>http://localhost:8899/about/</loc>
     <lastmod>2026-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinge.pages.dev/</loc>
+    <loc>http://localhost:8899/</loc>
     <lastmod>2026-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinge.pages.dev/tags/ai/</loc>
+    <loc>http://localhost:8899/tags/ai/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinge.pages.dev/categories/</loc>
+    <loc>http://localhost:8899/categories/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinge.pages.dev/posts/</loc>
+    <loc>http://localhost:8899/posts/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinge.pages.dev/tags/</loc>
+    <loc>http://localhost:8899/tags/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinge.pages.dev/posts/production-system-beats-consumption/</loc>
+    <loc>http://localhost:8899/posts/production-system-beats-consumption/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinge.pages.dev/categories/%E6%80%9D%E8%80%83/</loc>
+    <loc>http://localhost:8899/categories/%E6%80%9D%E8%80%83/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinge.pages.dev/tags/%E6%80%9D%E7%BB%B4%E6%A8%A1%E5%9E%8B/</loc>
+    <loc>http://localhost:8899/tags/%E6%80%9D%E7%BB%B4%E6%A8%A1%E5%9E%8B/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinge.pages.dev/tags/%E6%95%88%E7%8E%87/</loc>
+    <loc>http://localhost:8899/tags/%E6%95%88%E7%8E%87/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinge.pages.dev/archives/</loc>
+    <loc>http://localhost:8899/archives/</loc>
   </url><url>
-    <loc>https://jinge.pages.dev/search/</loc>
+    <loc>http://localhost:8899/search/</loc>
   </url>
 </urlset>

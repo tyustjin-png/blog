@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>金哥的思考</title>
-    <link>https://jinge.pages.dev/</link>
+    <link>http://localhost:8899/</link>
     <description>Recent content on 金哥的思考</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jinge.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:8899/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于我</title>
-      <link>https://jinge.pages.dev/about/</link>
+      <link>http://localhost:8899/about/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://jinge.pages.dev/about/</guid>
+      <guid>http://localhost:8899/about/</guid>
       <description>&lt;h2 id=&#34;金哥&#34;&gt;金哥&lt;/h2&gt;
 &lt;p&gt;投资人 / 创业者 / 持续行动者&lt;/p&gt;
 &lt;h3 id=&#34;核心理念&#34;&gt;核心理念&lt;/h3&gt;
@@ -34,9 +34,9 @@
     </item>
     <item>
       <title>降低摸机率，靠的不是自律，而是用&#34;生产系统&#34;碾压&#34;消费系统&#34;</title>
-      <link>https://jinge.pages.dev/posts/production-system-beats-consumption/</link>
+      <link>http://localhost:8899/posts/production-system-beats-consumption/</link>
       <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://jinge.pages.dev/posts/production-system-beats-consumption/</guid>
+      <guid>http://localhost:8899/posts/production-system-beats-consumption/</guid>
       <description>解法不是继续在手机内部抵抗手机，而是迁移。不是强迫自己去讨厌手机，而是让自己重新爱上电脑。</description>
     </item>
   </channel>
