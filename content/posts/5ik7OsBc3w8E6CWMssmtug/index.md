@@ -7,8 +7,6 @@ author: "金金"
 tags: []
 ---
 
-![图片](images/img_1.jpg)
-
 很多写作者已经知道Markdown写作的巨大优点了：
 
 > 写完就意味着编辑完

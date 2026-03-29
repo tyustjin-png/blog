@@ -7,8 +7,6 @@ author: "金木火水"
 tags: []
 ---
 
-原创 金金视界 金金视界 *2018年11月29日 07:57*
-
 ![图片](images/img_1.jpg)
 
 上一篇文章介绍了 [\[Markdown格式写作的优秀软件Ulysses\]](https://mp.weixin.qq.com/s?__biz=MzIzMzg5OTY3OQ==&mid=2247483795&idx=1&sn=20aa62d7f6f99cc8dde5ad7d1e203fcd&scene=21#wechat_redirect) ，在定义排版样式时需要用到css文件，我自己参考了笑来老师公众号排版的css文件。
