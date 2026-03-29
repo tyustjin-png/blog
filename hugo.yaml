@@ -25,6 +25,8 @@ params:
   homeInfoParams:
     Title: "金哥的思考"
     Content: >
+      <div class="home-banner-wrap"><img class="home-banner" src="/images/home-banner.jpg" alt="金哥的思考 Banner" /></div>
+
       投资人 / 创业者 / 持续行动者
       
       
