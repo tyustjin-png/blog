@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 升级个人操作系统就是持续行动和思考
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSTCYgticZTm5SoKby8pqJ9TEcBOVFaZ630ouOJ9TzpmJ0zlFAYGbib6R7n5INFkY2u5ggic6ic9PZFb6Q/0?wx_fmt=jpeg)
-
 金金 金金视界 *2020年6月16日 23:28*
 
 *《通往财富自由之路》序言读书思考——2020/6/16*

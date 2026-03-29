@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 笑来老师公众号文章排版样式css关键内容详解
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSQsIVegHtqp3ur5u5UZQ1Y4sH0XRlAiaicVOnUWt5jhNbaSiblWNBSELIctOxXic5yEsYGjxG02V7O8ag/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2018年11月29日 07:57*
 
 ![图片](images/img_1.jpg)

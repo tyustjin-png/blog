@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 实力和运气，哪个更重要
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSSO2HkwehHLIZFfO5ScRcHnTr7ibvw2h2IBV8hXnSeHcrBvqiaqkibFN4K9MYUUOXae11x1VlgvibYeYg/0?wx_fmt=jpeg)
-
 金金视界 金金视界 *2020年7月27日 01:09*
 
 《实力运气与成功》读书笔记

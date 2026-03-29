@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 领导问你还有什么问题的时候，为什么总是问不出来
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSSDtUPHXBxFubl9GxpINib9DaVRuCawa09oGG7WykMYwbeTrlQia3RGrgW4n8ZkNtem3kjvqRXMySfQ/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2020年7月10日 01:09*
 
 #### 为什么你总是不敢提问？

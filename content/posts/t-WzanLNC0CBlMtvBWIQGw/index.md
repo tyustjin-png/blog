@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 为什么学了那么多概念和方法却用不上
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSTYn4IPwffKHJu15X3q8KMGS5MonnTpicFmLsFhHHVOJCIx3MF6YfK9MEPwg4ysDrGSmntNVcKgVdg/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2020年8月5日 11:17*
 
 #### 学到的知识用不上

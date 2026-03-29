@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 量化——从道理到实践的桥梁
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSS3uFbQEzK5TeWXdFxIPFt3lv2SziarzJrHflehpx8fDwaU1drmneAgWESG8e3LhWyXxZsl3y27ugw/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2020年6月29日 00:12*
 
 士兵突击中，高连长说许三多：

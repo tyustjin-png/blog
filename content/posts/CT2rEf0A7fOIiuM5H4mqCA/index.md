@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 做一个有故事的人
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSRQ2FG41Yica91Y3CJraaSEib6JQyCcOnoic09R61yCXDjy65oSm6mibU4TQjrpmawnOubZZ4ly1cAzog/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2020年6月27日 01:18*
 
 有故事，会有意想不到的传播效果。

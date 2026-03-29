@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 为什么对外公开你的目标后，更不容易达成
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSQRicQleGZablmib1DiaGZAmm1vWYxL6eaLl0xaGibSib8VRE9KTxTaFYS7qC4IdicRv2ltJKgcibicuRCY5w/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2020年7月6日 10:15*
 
 你有经常立FLAG，并且对外公开吗，比如朋友圈发，我要健身，要写公众号，开始学英语”这样的，最后实现了多少呢？

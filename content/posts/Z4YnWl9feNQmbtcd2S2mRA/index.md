@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 《遥远的救世主》之聪明的肖亚文
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSRVvOSp12PzROf2DLfic28G0O5oz2bG2QMhibgRd47mMg7TFvo5NeDrSDZOZdNyue44E3eUiar9zJteA/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2018年12月22日 15:51*
 
 > 长着一张精致得让人无法判断年龄的脸，仿佛就是一件油画大师呕心沥血创作出来的艺术品。她身穿一套华贵的职业女装，眼睛充满了灵气和自信，浑身散发着一种精明干练的气质，是典型白领女性的特征。

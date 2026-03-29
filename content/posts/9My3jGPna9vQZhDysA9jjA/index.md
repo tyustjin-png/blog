@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 压力总会有，先填坑再出坑
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSS2ia3NteUFPj8ekmOxb2TrljCM8rMp9JylEjbia7GsdOtNmuzMXoPclTbBgiamtqOBTZgXyrRWdq6CQ/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2020年7月4日 18:32*
 
 学习是苦的，压力是难受的，一直如此，谁说快乐学习，快乐进步，那肯定有坑。

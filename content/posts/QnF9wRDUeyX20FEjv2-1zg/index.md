@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 教是更好的学
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSSQoIbetZOdpLLqiarYiaLF1zGGAStKnZXm2Fj0ib5tcpABt32Nty050kuibXJBjr4pb0Q0Oic4Yao1J6w/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2018年11月30日 21:46*
 
 ![图片](images/img_1.jpg)

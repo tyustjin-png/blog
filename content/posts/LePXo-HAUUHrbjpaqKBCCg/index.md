@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 平凡不出门，稀缺传千里
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSQ6RLowvwDnov2ZVbOw2IefOBNoRlARO2PhJXf2dGSILl99tNobTXW6qKIFibYAvwA0phooOKN0Hqg/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2020年7月3日 21:18*
 
 #### 稀缺传千里

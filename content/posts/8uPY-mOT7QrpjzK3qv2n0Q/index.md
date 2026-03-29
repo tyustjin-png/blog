@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 比特币多50%的定投方法—分区间定投概述
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSS2K00OyhqEMhiaicNrW1nCKTZqtEX0yUb9p3XXeCPQTKmRliamNToJufAEQmUAl5k8waqeDFynIiawAQ/0?wx_fmt=jpeg)
-
 金金 金金视界 *2020年12月1日 16:03*
 
 这个表是我自己执行的定投策略收益图。

@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 道理只听不用，当然过不好这一生
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSSI4FfbufJawD5BiajAQGl7u69DXjmcBrFVnrcS8NhNDRlHqicmBpw1iaVtgBZBu76OuZmGKvuQNZ8Tg/0?wx_fmt=jpeg)
-
 金金 金金视界 *2020年6月17日 17:56*
 
 *2020年06月17日 《财富自由之路》前言&第一章—金金笔记*

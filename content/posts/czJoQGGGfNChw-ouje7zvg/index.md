@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 成长到底是什么？
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSTh7xVoibRpFZTC1EnvjYLibv6mbWEUuiaCCAMwNgbor4IYibclpLQOrJKc9JhaAxhr4noibuIEuhB2leQ/0?wx_fmt=jpeg)
-
 金金 金金视界 *2020年6月20日 10:04*
 
 *2020年06月19日 《财富自由之路》第三章—金金笔记&思考*

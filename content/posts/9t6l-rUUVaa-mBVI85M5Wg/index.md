@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 认知的逻辑
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSRRw3QhNo1JyNryicXeekz7uhRgWe3rdvWEMhprQTtibb6Nib30wSHnbUw2AuyqV68UyvnhxKnPPNJEQ/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2018年12月15日 10:21*
 
 ![图片](images/img_1.jpg)

@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 事情很多，一件一件做
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSTY4TzMeHUfp20985mghR7libiacGRgw5w4uEeUQMcZ8e94jwIsVwtosbwWTibUSlgicibr6jhV8icwwib2g/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2020年7月8日 18:49*
 
 我们往往被一些看似真切的谎言所误导，比如：

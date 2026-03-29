@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 什么决定了幸福
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSSrbABIwL2oTicUeibn0QdoEhDG6Anhtib9Ricic7sAuegSJagTIBOaic3zBWuJVSuwU4SpnibiaPgANNRQlA/0?wx_fmt=jpeg)
-
 罗伯特.瓦尔丁格 金金视界 *2020年7月14日 14:38*
 
 这是一篇关于幸福的TED演讲稿，作者罗伯特.瓦尔丁格。

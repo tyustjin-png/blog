@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 为什么知道跑步有益，还是无法动身？
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSSmkEobMjbXjL0UQY7tsd5YwVkHFb0nZ7wJlBmbcfVg5jtzZv8ibkM4DqQ0lDkYnJtVHAamqYlWPgQ/0?wx_fmt=jpeg)
-
 金金 金金视界 *2020年6月18日 23:25*
 
 *2020年06月18日 《财富自由之路》第二章—金金笔记&思考*

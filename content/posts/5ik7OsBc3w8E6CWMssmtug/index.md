@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 最好的输入软件——Markdown写作之Ulysses(及格版)
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSQsIVegHtqp3ur5u5UZQ1Y45ffOI47BibicwXE3acYep0xaVyqozfCw8YA4Io0IZGkQ0V0pGx5kp8cw/0?wx_fmt=jpeg)
-
 金金 金金视界 *2018年11月28日 16:04*
 
 ![图片](images/img_1.jpg)

@@ -8,9 +8,6 @@ tags: []
 ---
 
 # 养成习惯之前，他律比自律重要
-
-![cover_image](https://mmbiz.qlogo.cn/mmbiz_jpg/dkCCJ08CrSRGOApgQ3eotUgqMKYnScicicnr7WLGwDOzw9JibaVjdicXJFic45B1VxKUMdgP1w56Da0ytlFVrD6hBicw/0?wx_fmt=jpeg)
-
 原创 金金视界 金金视界 *2020年7月23日 20:03*
 
 想进步，找到一直行动的人，和他们一起。
