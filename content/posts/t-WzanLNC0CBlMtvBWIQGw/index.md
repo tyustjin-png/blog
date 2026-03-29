@@ -145,10 +145,3 @@ tags: []
 有了框架思维，才知道学的是什么，可以用在哪儿。
 
 就像多年来，你在电脑里收藏存储的文件，存的时候没有重新命名和归类，需要的时候，就是很难找到。
-
----
-
-欢迎关注视频号，持续分享学习、成长和投资内容
-![图片](images/img_3.jpg)
-
-![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)

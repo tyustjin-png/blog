@@ -88,7 +88,4 @@ Johnny最独特的观点是：
 - [我的AI工具箱 #01｜每日未读邮件快速总结](https://mp.weixin.qq.com/s?__biz=MzIzMzg5OTY3OQ==&mid=2247484185&idx=1&sn=9390dfbe8255d7e2217a3465ebebb2e4&scene=21#wechat_redirect)
 - [我的AI工具箱 #02｜Claude Code安全部署：如何让 AI 助理既强大又可控](https://mp.weixin.qq.com/s?__biz=MzIzMzg5OTY3OQ==&mid=2247484191&idx=1&sn=3561e2c278e79b43b6efebd785853954&scene=21#wechat_redirect)
 - [我的AI工具箱 #03｜我造了个「读刻」AI资料库，电脑手机都能用](https://mp.weixin.qq.com/s?__biz=MzIzMzg5OTY3OQ==&mid=2247484202&idx=1&sn=5202a298532a45794928ba1f3ed9a657&scene=21#wechat_redirect)
-
-![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)
-
- 稀罕作者
+稀罕作者

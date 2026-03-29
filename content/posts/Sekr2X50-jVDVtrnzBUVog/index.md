@@ -178,10 +178,3 @@ tags: []
 如果伴随经验而来的是让你焦虑，面对各种诱惑和选择，甚至到效率低下的程度，那不要也罢。
 
 总结就是，我们精力有限，一个时间段内只能做一件事情，所以要做最重要的那件。去找到它，明确细化到我们可以操作的小目标，然后重复的执行，不断的达成一个个小的目标，蜕变指日可待。
-
----
-
-欢迎关注视频号：
-![图片](images/img_1.jpg)
-
-![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)

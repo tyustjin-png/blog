@@ -200,5 +200,3 @@ Css文件中的代码，
 用Markdown格式书写文档时，每一段结束时要空一行，这样在公众号编辑器中最终呈现效果 才有段间距。
 
 从Ulysses或其他编辑器中复制Markdown文档到公众号编辑器时，在粘贴之后，尽量先完成全部的后续编辑之后再渲染，后续编辑包括插图、定义超链接等等。
-
-![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)

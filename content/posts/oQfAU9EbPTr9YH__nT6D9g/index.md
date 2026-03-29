@@ -84,10 +84,3 @@ tags: []
 第三，对方推出结论的逻辑，是否是正确的，没有漏洞的。这一点是最核心的。
 
 这样在追求事实，注重结论，强调逻辑的商务讨论中，你一定能够提出，高逼格的问题。
-
----
-
-持续更新，欢迎关注视频号：
-![图片](images/img_1.jpg)
-
-![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)

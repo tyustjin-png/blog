@@ -69,5 +69,3 @@ tags: []
 
 欢迎关注金金视频号，有更多有趣视频：
 ![图片](images/img_1.jpg)
-
-![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)

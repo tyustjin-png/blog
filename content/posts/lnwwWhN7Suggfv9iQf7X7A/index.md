@@ -256,5 +256,3 @@ Cycle 3(2020) 就是例子——13x 信号只出现了 26 天，但通过 1x-5x 
 也是提供一个思路，每个人都可以建立自己的体系，哪怕只用一个维度，去丈量和判断，去指导操作，也肯定比纯感性要好。
 
 综上，仅供交流，片面之处，欢迎指正。
-
-![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)

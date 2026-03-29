@@ -141,5 +141,3 @@ tags: []
 “等、靠、要”是多数人的生活状态，什么时候能摆脱这种思维方式，什么时候才能看到机会，机会总会出现，但我们得有看到和抓住的能力。
 
 这是肖亚文的聪明之处。
-
-![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)

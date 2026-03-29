@@ -102,8 +102,3 @@ tags: []
 即同样的内容，你给它打造一个什么样的展现形式。你在“哪些不一样的地方”，做了“什么奇特的事情”。
 
 比如常用的反转、再反转等等。
-
-欢迎关注视频号：
-![图片](images/img_2.jpg)
-
-![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)

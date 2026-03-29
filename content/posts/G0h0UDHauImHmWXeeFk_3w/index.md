@@ -197,5 +197,3 @@ tags: []
 不要“没有风险共担”的合作
 
 别把系统层的风险集中到个人身上；把它拆散给时间、组合、人群，让我们的个人轨迹更接近“群体能扛住的那条平均线”。
-
-![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)

@@ -92,11 +92,3 @@ tags: []
 当这个过程延长，你会开始习惯于做一件事情。
 
 加油，找到一直行动的人，和他们一起。
-
----
-
-刻意学习，深入思考，持续行动，欢迎关注视频号，一起进步。
-
-![图片](images/img_1.jpg)
-
-![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)
