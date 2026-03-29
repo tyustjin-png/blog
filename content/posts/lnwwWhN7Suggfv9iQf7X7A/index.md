@@ -8,8 +8,6 @@ cover:
 tags: []
 ---
 
-# 分区间定投完整指南
-
 ![cover_image](images/img_1.jpg)
 
 原创 金金视界 金金视界 *2026年2月6日 16:48*

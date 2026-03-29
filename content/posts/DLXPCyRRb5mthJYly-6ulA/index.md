@@ -8,8 +8,6 @@ cover:
 tags: []
 ---
 
-# 收获很大的复利人生课
-
 ![cover_image](images/img_1.jpg)
 
 金金 金金视界 *2025年8月16日 23:08*

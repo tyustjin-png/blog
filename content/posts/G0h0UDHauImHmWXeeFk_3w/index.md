@@ -8,8 +8,6 @@ cover:
 tags: []
 ---
 
-# 遍历性的启示
-
 ![cover_image](images/img_1.jpg)
 
 原创 金金视界 金金视界 *2025年9月6日 11:30*

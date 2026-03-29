@@ -8,8 +8,6 @@ cover:
 tags: []
 ---
 
-# 我的AI工具箱 #02｜Claude Code安全部署：如何让 AI 助理既强大又可控
-
 这是《我的AI工具箱》系列的第二篇。安全部署的部署Claude Code。
 
 ### 问题：Claude的权限很大

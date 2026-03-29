@@ -8,8 +8,6 @@ cover:
 tags: []
 ---
 
-# 兰州敦煌自驾小记
-
 ![cover_image](images/img_1.jpg)
 
 金金 金金视界 *2025年7月21日 03:27*

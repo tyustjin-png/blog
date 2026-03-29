@@ -7,9 +7,6 @@ author: "金金"
 tags: []
 ---
 
-# 最好的输入软件——Markdown写作之Ulysses(及格版)
-金金 金金视界 *2018年11月28日 16:04*
-
 ![图片](images/img_1.jpg)
 
 很多写作者已经知道Markdown写作的巨大优点了：
