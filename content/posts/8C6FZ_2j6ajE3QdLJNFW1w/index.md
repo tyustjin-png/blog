@@ -129,17 +129,3 @@ Agent会越来越聪明吗？我觉得会。但不是靠更大的模型，而是
 也给紫龙写了一条更新规则，每周调研写一篇最新的Agent自我进化和成长的报告，对比自己的系统，进行优化。
 
 ![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)
-
- 喜欢作者
-
-继续滑动看下一个
-
-![](images/img_3.jpg)
-
-金金视界
-
-向上滑动看下一个
-
-![](images/img_4.jpg)
-
-金金视界
