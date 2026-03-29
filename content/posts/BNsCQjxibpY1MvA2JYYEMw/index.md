@@ -167,9 +167,3 @@ z 和投入倍数的对应关系：
 - 539：毛选投资哲学——保存有生力量
 
 ---
-
-仅供参考，欢迎交流哇
-
-![](https://mmbiz.qlogo.cn/sz_mmbiz_jpg/Ok2E6oQHUIHEX8yvp6L4bDz4Re3B6t5A2FyQzHBFeJ71OdBOUSzlg7JBaM9zUW2JOjfpBzpLQ4BFVO9JmZPfGg/0?wx_fmt=jpeg)
-
- 喜欢作者

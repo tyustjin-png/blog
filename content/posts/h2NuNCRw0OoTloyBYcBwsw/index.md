@@ -74,9 +74,6 @@ Johnny最独特的观点是：
 再加上本身就是资产的IP，无论自己侧重于 Know-How还是IP，AI驱动的系统都是实现 “系统性生产能力” 的必要条件。
 
 ---
-
-与AI同行，一起学习，欢迎交流哇
-
 **往期回顾：**
 
 - [我的AI工具箱 #01｜每日未读邮件快速总结](https://mp.weixin.qq.com/s?__biz=MzIzMzg5OTY3OQ==&mid=2247484185&idx=1&sn=9390dfbe8255d7e2217a3465ebebb2e4&scene=21#wechat_redirect)
