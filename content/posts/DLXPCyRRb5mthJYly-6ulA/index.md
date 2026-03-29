@@ -3,8 +3,6 @@ title: "收获很大的复利人生课"
 date: 2025-08-16T00:00:00+08:00
 summary: "14-15号两天，有机会参加了紫菜老板组织的几位老师的分享会，收获很多，复盘分享给大家。"
 author: "金金"
-cover:
-  image: "images/cover.jpg"
 tags: []
 ---
 

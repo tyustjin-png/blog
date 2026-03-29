@@ -3,8 +3,6 @@ title: "分区间定投完整指南"
 date: 2026-02-06T00:00:00+08:00
 summary: "熊市了怎么办——定投依旧是我们大众最合适的方式，今天跟大家交流关于定投的一些思考。"
 author: "金金视界"
-cover:
-  image: "images/cover.jpg"
 tags: []
 ---
 

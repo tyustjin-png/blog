@@ -3,8 +3,6 @@ title: "我的AI工具箱 #02｜Claude Code安全部署：如何让 AI 助理既
 date: 2026-01-26T00:00:00+08:00
 summary: "这是《我的AI工具箱》系列的第二篇。安全部署的部署Claude Code。"
 author: "金金视界"
-cover:
-  image: "images/cover.jpg"
 tags: []
 ---
 

@@ -3,8 +3,6 @@ title: "小龙虾打磨相对安全的自动定投链路"
 date: 2026-03-20T00:00:00+08:00
 summary: "有OpenClaw带我跑：怎么搭一条从头到尾都安全的自动定投链路"
 author: "金金视界"
-cover:
-  image: "images/cover.jpg"
 tags: []
 ---
 

@@ -3,8 +3,6 @@ title: "5/1000 九神估值指标（ahr999）还适用吗"
 date: 2026-02-05T00:00:00+08:00
 summary: "我们一直在不确定性中，寻找可能性更高的那一侧"
 author: "金金视界"
-cover:
-  image: "images/cover.jpg"
 tags: []
 ---
 

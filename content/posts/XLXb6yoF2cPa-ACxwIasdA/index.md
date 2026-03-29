@@ -3,8 +3,6 @@ title: "AI 加持下，创作内容的哪些环节不应该被 AI 替代"
 date: 2026-02-21T00:00:00+08:00
 summary: "AI 帮我\"用上\"过去的思考，但不替代我\"现在\"的思考"
 author: "金金视界"
-cover:
-  image: "images/cover.jpg"
 tags: []
 ---
 

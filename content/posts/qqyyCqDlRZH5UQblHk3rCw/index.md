@@ -3,8 +3,6 @@ title: "我用影刀自动抓取知识星球内容，节省了20个小时"
 date: 2025-06-25T00:00:00+08:00
 summary: "用影刀RPA整理自己在知识星球上发布过的内容，帮我节省了20小时"
 author: "金金视界"
-cover:
-  image: "images/cover.jpg"
 tags: []
 ---
 

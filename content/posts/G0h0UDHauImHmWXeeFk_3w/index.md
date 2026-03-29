@@ -3,8 +3,6 @@ title: "遍历性的启示"
 date: 2025-09-06T00:00:00+08:00
 summary: "对系统来说，遍历性是反脆弱的，但系统的遍历性对个人来说，不是反脆弱的"
 author: "金金视界"
-cover:
-  image: "images/cover.jpg"
 tags: []
 ---
 

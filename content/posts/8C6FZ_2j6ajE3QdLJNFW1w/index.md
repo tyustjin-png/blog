@@ -3,8 +3,6 @@ title: "Openclaw小龙虾助手会越来越聪明吗"
 date: 2026-03-09T00:00:00+08:00
 summary: "Openclaw的小龙虾Agent会越来越聪明，是靠从\"记忆机器\"变成\"学习系统\"——能记住错误、能反思经验、能从中改进。"
 author: "金金视界"
-cover:
-  image: "images/cover.jpg"
 tags: []
 ---
 
