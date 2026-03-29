@@ -1,0 +1,40 @@
+{{- define "main" }}
+
+{{- if .Site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <div class="home-banner-wrap">
+      <img class="home-banner" src="/images/home-banner.jpg" alt="金哥的思考 Banner" />
+    </div>
+    <header class="entry-header">
+        <h1>{{ .Site.Params.homeInfoParams.Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Site.Params.homeInfoParams.Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" site.Params.socialIcons }}
+    </footer>
+</article>
+{{- end }}
+
+{{- $pages := .RegularPages }}
+{{- if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
+{{- $paginator := .Paginate $pages }}
+{{- range $index, $page := $paginator.Pages }}
+{{- if and $.IsHome (eq $index 0) (not $.Site.Params.homeInfoParams) }}{{- else }}
+<article class="post-entry">
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">{{ .Title }}</h2>
+  </header>
+  {{- if (ne .Description "") }}
+  <div class="entry-content"><p>{{ .Description }}</p></div>
+  {{- else if (ne .Summary "") }}
+  <div class="entry-content"><p>{{ .Summary | plainify }}</p></div>
+  {{- end }}
+  <footer class="entry-footer">{{ partial "post_meta.html" . }}</footer>
+  <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+{{- end }}
+
+{{- end }}
