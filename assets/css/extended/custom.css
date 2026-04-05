@@ -1,154 +1,64 @@
 /* ===== Hero 首屏 ===== */
 .hero-home {
   text-align: center;
-  padding: 5rem 1rem 2.5rem;
-  max-width: 640px;
-  margin: 0 auto;
-}
-.hero-label {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  opacity: 0.45;
-  margin-bottom: 0.8rem;
+  padding: 4rem 1rem 2rem;
 }
 .hero-home h1 {
-  font-size: 2.6rem;
-  margin-bottom: 0.8rem;
-  letter-spacing: 0.02em;
+  font-size: 2.4rem;
+  margin-bottom: 0.4rem;
 }
 .hero-tagline {
-  font-size: 1.1rem;
-  opacity: 0.75;
-  line-height: 1.8;
-  margin-bottom: 0.8rem;
+  font-size: 1.15rem;
+  opacity: 0.85;
+  margin-bottom: 0.6rem;
 }
 .hero-sub {
   font-style: italic;
-  opacity: 0.4;
-  font-size: 0.9rem;
-  margin-bottom: 2rem;
-}
-
-/* Hero 数字统计 */
-.hero-stats {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 1.5rem;
-}
-.stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.stat-num {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1;
-}
-.stat-label {
-  font-size: 0.75rem;
-  opacity: 0.5;
-  margin-top: 0.3rem;
-  letter-spacing: 0.05em;
-}
-
-/* 分隔线 */
-.home-divider {
-  width: 48px;
-  height: 1px;
-  background: var(--border);
-  margin: 2.5rem auto;
-}
-
-/* ===== 策展式内容区 ===== */
-.curated-section {
-  margin-bottom: 2.5rem;
-  padding: 0;
-}
-.curated-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
-  margin-bottom: 1rem;
-}
-.curated-icon {
-  font-size: 1.6rem;
-  line-height: 1;
-  flex-shrink: 0;
-  margin-top: 0.15rem;
-}
-.curated-header h2 {
-  font-size: 1.2rem;
-  margin: 0 0 0.2rem;
-}
-.curated-header h2 a {
-  text-decoration: none;
-  color: var(--primary);
-}
-.curated-header h2 a:hover {
-  opacity: 0.7;
-}
-.curated-desc {
-  font-size: 0.85rem;
-  opacity: 0.55;
-  line-height: 1.5;
-  margin: 0;
-}
-.curated-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.curated-list li {
-  padding: 0.55rem 0;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-.curated-list li:last-child {
-  border-bottom: none;
-}
-.curated-list a {
-  font-size: 0.92rem;
-  text-decoration: none;
-  color: var(--primary);
-  transition: opacity 0.15s;
-}
-.curated-list a:hover {
   opacity: 0.6;
-}
-.curated-tag {
-  font-size: 0.65rem;
-  padding: 0.15rem 0.5rem;
-  border-radius: 3px;
-  background: var(--border);
-  opacity: 0.7;
-  white-space: nowrap;
-  letter-spacing: 0.03em;
-}
-.curated-more {
-  margin-top: 0.5rem;
-}
-.curated-more a {
-  font-size: 0.82rem;
-  opacity: 0.45;
-  text-decoration: none;
-  color: var(--primary);
-}
-.curated-more a:hover {
-  opacity: 0.8;
+  font-size: 0.95rem;
 }
 
-/* ===== 最新动态 ===== */
+/* ===== 三板块卡片 ===== */
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  padding: 1rem 0 2.5rem;
+}
+.pillar-card {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.8rem 1.4rem;
+  text-decoration: none;
+  color: var(--primary);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.pillar-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.pillar-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.pillar-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+.pillar-card p {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+
+/* ===== 最新文章区 ===== */
 .section-title {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
   padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--border);
-  font-weight: 600;
+  border-bottom: 2px solid var(--border);
 }
 .recent-posts {
   padding-bottom: 2rem;
@@ -158,27 +68,9 @@
   margin-top: 1.2rem;
 }
 .see-all a {
-  font-size: 0.88rem;
-  opacity: 0.45;
-  text-decoration: none;
-  color: var(--primary);
+  font-size: 0.95rem;
+  opacity: 0.7;
 }
 .see-all a:hover {
-  opacity: 0.8;
-}
-
-/* ===== 响应式 ===== */
-@media (max-width: 768px) {
-  .hero-home {
-    padding: 3rem 1rem 2rem;
-  }
-  .hero-home h1 {
-    font-size: 2rem;
-  }
-  .hero-stats {
-    gap: 2rem;
-  }
-  .stat-num {
-    font-size: 1.3rem;
-  }
+  opacity: 1;
 }
