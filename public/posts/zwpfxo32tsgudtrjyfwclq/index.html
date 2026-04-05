@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>笑来老师公众号文章排版样式css关键内容详解 | 金哥的思考</title>
+<meta name="keywords" content="">
+<meta name="description" content="笑来老师公众号文章排版样式css关键内容详解">
+<meta name="author" content="金木火水">
+<link rel="canonical" href="https://jinjin123.com/posts/zwpfxo32tsgudtrjyfwclq/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.199042e659bc7245f5609d333d6c044eb554a0640849bb874e1dff8eb0f57209.css" integrity="sha256-GZBC5lm8ckX1YJ0zPWwETrVUoGQISbuHTh3/jrD1cgk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jinjin123.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jinjin123.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jinjin123.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jinjin123.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jinjin123.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://jinjin123.com/posts/zwpfxo32tsgudtrjyfwclq/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+.home-banner-wrap{margin:0 0 1.25rem 0}
+.home-banner{width:100%;display:block;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+@media (max-width:768px){.home-banner-wrap{margin:0 0 1rem 0}.home-banner{border-radius:14px}}
+</style>
+<meta property="og:url" content="https://jinjin123.com/posts/zwpfxo32tsgudtrjyfwclq/">
+  <meta property="og:site_name" content="金哥的思考">
+  <meta property="og:title" content="笑来老师公众号文章排版样式css关键内容详解">
+  <meta property="og:description" content="笑来老师公众号文章排版样式css关键内容详解">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-11-29T00:00:00+08:00">
+    <meta property="article:modified_time" content="2018-11-29T00:00:00+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="笑来老师公众号文章排版样式css关键内容详解">
+  <meta name="twitter:description" content="笑来老师公众号文章排版样式css关键内容详解">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jinjin123.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "笑来老师公众号文章排版样式css关键内容详解",
+      "item": "https://jinjin123.com/posts/zwpfxo32tsgudtrjyfwclq/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "笑来老师公众号文章排版样式css关键内容详解",
+  "name": "笑来老师公众号文章排版样式css关键内容详解",
+  "description": "笑来老师公众号文章排版样式css关键内容详解",
+  "keywords": [
+    
+  ],
+  "articleBody": "上一篇文章介绍了 [Markdown格式写作的优秀软件Ulysses] ，在定义排版样式时需要用到css文件，我自己参考了笑来老师公众号排版的css文件。\n但对于不懂编程、不会代码的同学，依然不容易看懂里面的代码块究竟是什么含义。这篇文章会针对笑来老师的css文件内容中最重要的几个特征定义，逐行分析含义，另外，给出一些常用的css代码含义。\n整体配置 .markdown-here-wrapper { font-size: 16px; line-height: 1.8em; letter-spacing: 0.1em; }\nCss文件中的代码，\n{} 内的部分是定义规则，\n{} 外的部分是定义的规则所要施加的对象范围，所以，以上代码的含义是：\n对Markdown here的整体配置 字体大小 ：16px； 行高 ：1.8倍的字体大小，em指的是相对单位，当前对象内字体的尺寸 字间距 ：0.1倍的字体大小\n强调 strong, b{ color: #BF360C; }\n含义是：\n强调 ，用粗体显示； 颜色 ：#BF360C;\nem, i { color: #009688; }\n含义是：\n强调 ：用斜体显示 颜色 ：#009688;\n水平分割线 hr border: 1px solid #BF360C; margin: 1.5em auto; }\n含义是：\n水平分割线 边界 ：1px 实线 #BF360C; 外边距 ：上下外边距1.5倍字体大小 左右外边距自动\n段落 p { margin: 1.5em 5px!important; line-height: 1.8em; letter-spacing: 2px; padding: 0em 0.1em; }\n含义：\n段落 外边距 ：下上外边距都是1.5倍字体大小 左右外边距都是5px 行高 ：1.8倍的字体大小； 字间距 ：2px； 内边距 ：上下为0 左右内边距为0.1倍的字体大小；\n引用 blockquote, q { border-left: 4px solid #009688; margin: 1.5em 10px; padding: 0 20px; color: #777; quotes: none; margin-left: 0.2em; padding:0.2em; }\n含义是：\n引用块 左边框 ：4px 实线 #009688; 外边距 ：上下外边距都是1.5倍字体大小 左右外边距都是10px 内边距 ：上下内边距都是0 左右内边距都是20px； 颜色 ：#777; 引号类型 ：无引号； 外边距 ：左外边距是0.2倍的字体大小（可理解为左边框竖线在整个页面的相对位置） 内边距 ：上下左右的内边距都是0.2em（其中，左内边距可理解为引用的文字范围左边界距离左边框竖线的距离）如下图所示意。\n标题 h1, h2, h3, h4, h5, h6 { margin: 20px 0 10px; padding: 0; font-style: bold!important; color: #009688!important; text-align: center!important; margin: 1.5em 5px!important; padding: 0.5em 1em!important; }\n含义是：\n一级标题到六级标题的通用属性设置 外边距 ：上外边距为20px 右外边距为0 下外边距为10px 做外边距为0； 内边距 ：上右下左内边距都为0！优先； 字体 ：粗体！优先； 颜色 ：#009688!优先； 文本对齐 ：居中！优先； 外边距 ：上下外边距都为1.5倍的字号大小 左右外边距都为5px！优先； 内边距 ：上下内边距都为0.5倍的字号大小 左右内边距都为1倍字号大小！优先；\n一级标题 h1 { font-size: 24px!important; border-bottom: 1px solid #ddd!important; }\n含义：\n一级标题 字体大小 ：24px！优先； 底部边框 ：1px 实体 #ddd颜色！优先；\n二级标题 h2 { font-size: 20px!important; border-bottom: 1px solid #eee!important; }\n含义：\n二级标题 字体大小 ：20px！优先； 底部边框 ：1px 实体 #eee颜色！优先；\n三级标题 h3 { font-size: 18px; }\n含义：\n三级标题 字号 ：18px；\n四级标题 h4 { font-size: 16px; }\n含义：\n四级标题 字号 ：16px；\n以上为笑来老师所用css中的主要内容，也是常用样式css的主要内容，其中关于表格的部分没有写出来，是觉得通常公众号文章最重要的是几个级别的标题、强调、引用、分隔线这几部分。\n注意细节 定义css文件时，一定注意标点符号的格式，用英文格式。\n每一级标题中都可以自定义其大小、颜色、位置、行距等等。\n用Markdown格式书写文档时，每一段结束时要空一行，这样在公众号编辑器中最终呈现效果 才有段间距。\n从Ulysses或其他编辑器中复制Markdown文档到公众号编辑器时，在粘贴之后，尽量先完成全部的后续编辑之后再渲染，后续编辑包括插图、定义超链接等等。\n",
+  "wordCount" : "1359",
+  "inLanguage": "zh",
+  "datePublished": "2018-11-29T00:00:00+08:00",
+  "dateModified": "2018-11-29T00:00:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "金木火水"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jinjin123.com/posts/zwpfxo32tsgudtrjyfwclq/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "金哥的思考",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinjin123.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jinjin123.com/" accesskey="h" title="金哥的思考 (Alt + H)">金哥的思考</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jinjin123.com/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/dashboard/" title="定投面板">
+                    <span>定投面板</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/investing/" title="分区间定投">
+                    <span>分区间定投</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/ai-tools/" title="AI工具箱">
+                    <span>AI工具箱</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/methodology/" title="方法论">
+                    <span>方法论</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jinjin123.com/">主页</a>&nbsp;»&nbsp;<a href="https://jinjin123.com/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      笑来老师公众号文章排版样式css关键内容详解
+    </h1>
+    <div class="post-meta"><span title='2018-11-29 00:00:00 +0800 CST'>2018年11月29日</span>&nbsp;·&nbsp;<span>3 分钟</span>&nbsp;·&nbsp;<span>1359 字</span>&nbsp;·&nbsp;<span>金木火水</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e6%95%b4%e4%bd%93%e9%85%8d%e7%bd%ae" aria-label="整体配置">整体配置</a></li>
+                <li>
+                    <a href="#%e5%bc%ba%e8%b0%83" aria-label="强调">强调</a></li>
+                <li>
+                    <a href="#%e6%b0%b4%e5%b9%b3%e5%88%86%e5%89%b2%e7%ba%bf" aria-label="水平分割线">水平分割线</a></li>
+                <li>
+                    <a href="#%e6%ae%b5%e8%90%bd" aria-label="段落">段落</a></li>
+                <li>
+                    <a href="#%e5%bc%95%e7%94%a8" aria-label="引用">引用</a></li>
+                <li>
+                    <a href="#%e6%a0%87%e9%a2%98" aria-label="标题">标题</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#%e4%b8%80%e7%ba%a7%e6%a0%87%e9%a2%98" aria-label="一级标题">一级标题</a></li>
+                <li>
+                    <a href="#%e4%ba%8c%e7%ba%a7%e6%a0%87%e9%a2%98" aria-label="二级标题">二级标题</a></li>
+                <li>
+                    <a href="#%e4%b8%89%e7%ba%a7%e6%a0%87%e9%a2%98" aria-label="三级标题">三级标题</a></li>
+                <li>
+                    <a href="#%e5%9b%9b%e7%ba%a7%e6%a0%87%e9%a2%98" aria-label="四级标题">四级标题</a></li></ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#%e6%b3%a8%e6%84%8f%e7%bb%86%e8%8a%82" aria-label="注意细节">注意细节</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>上一篇文章介绍了 <a href="https://mp.weixin.qq.com/s?__biz=MzIzMzg5OTY3OQ==&amp;mid=2247483795&amp;idx=1&amp;sn=20aa62d7f6f99cc8dde5ad7d1e203fcd&amp;scene=21#wechat_redirect">[Markdown格式写作的优秀软件Ulysses]</a> ，在定义排版样式时需要用到css文件，我自己参考了笑来老师公众号排版的css文件。</p>
+<p>但对于不懂编程、不会代码的同学，依然不容易看懂里面的代码块究竟是什么含义。这篇文章会针对笑来老师的css文件内容中最重要的几个特征定义，逐行分析含义，另外，给出一些常用的css代码含义。</p>
+<h2 id="整体配置">整体配置<a hidden class="anchor" aria-hidden="true" href="#整体配置">#</a></h2>
+<blockquote>
+<p>.markdown-here-wrapper {
+font-size: 16px;
+line-height: 1.8em;
+letter-spacing: 0.1em;
+}</p>
+</blockquote>
+<p>Css文件中的代码，</p>
+<pre tabindex="0"><code>{}
+</code></pre><p>内的部分是定义规则，</p>
+<pre tabindex="0"><code>{}
+</code></pre><p>外的部分是定义的规则所要施加的对象范围，所以，以上代码的含义是：</p>
+<blockquote>
+<p>对Markdown here的整体配置
+<em>字体大小</em> ：16px；
+<em>行高</em> ：1.8倍的字体大小，em指的是相对单位，当前对象内字体的尺寸
+<em>字间距</em> ：0.1倍的字体大小</p>
+</blockquote>
+<h2 id="强调">强调<a hidden class="anchor" aria-hidden="true" href="#强调">#</a></h2>
+<blockquote>
+<p>strong, b{
+color: #BF360C;
+}</p>
+</blockquote>
+<p>含义是：</p>
+<blockquote>
+<p><em>强调</em> ，用粗体显示；
+<em>颜色</em> ：#BF360C;</p>
+<p>em, i {
+color: #009688;
+}</p>
+</blockquote>
+<p>含义是：</p>
+<blockquote>
+<p><em>强调</em> ：用斜体显示
+<em>颜色</em> ：#009688;</p>
+</blockquote>
+<h2 id="水平分割线">水平分割线<a hidden class="anchor" aria-hidden="true" href="#水平分割线">#</a></h2>
+<blockquote>
+<p>hr
+border: 1px solid #BF360C;
+margin: 1.5em auto;
+}</p>
+</blockquote>
+<p>含义是：</p>
+<blockquote>
+<p><em>水平分割线</em>
+<em>边界</em> ：1px 实线 #BF360C;
+<em>外边距</em> ：上下外边距1.5倍字体大小 左右外边距自动</p>
+</blockquote>
+<h2 id="段落">段落<a hidden class="anchor" aria-hidden="true" href="#段落">#</a></h2>
+<blockquote>
+<p>p {
+margin: 1.5em 5px!important;
+line-height: 1.8em;
+letter-spacing: 2px;
+padding: 0em 0.1em;
+}</p>
+</blockquote>
+<p>含义：</p>
+<blockquote>
+<p><em>段落</em>
+<em>外边距</em> ：下上外边距都是1.5倍字体大小 左右外边距都是5px
+<em>行高</em> ：1.8倍的字体大小；
+<em>字间距</em> ：2px；
+<em>内边距</em> ：上下为0 左右内边距为0.1倍的字体大小；</p>
+</blockquote>
+<h2 id="引用">引用<a hidden class="anchor" aria-hidden="true" href="#引用">#</a></h2>
+<blockquote>
+<p>blockquote, q {
+border-left: 4px solid #009688;
+margin: 1.5em 10px;
+padding: 0 20px;
+color: #777;
+quotes: none;
+margin-left: 0.2em;
+padding:0.2em;
+}</p>
+</blockquote>
+<p>含义是：</p>
+<blockquote>
+<p><em>引用块</em>
+<em>左边框</em> ：4px 实线 #009688;
+<em>外边距</em> ：上下外边距都是1.5倍字体大小 左右外边距都是10px
+<em>内边距</em> ：上下内边距都是0 左右内边距都是20px；
+<em>颜色</em> ：#777;
+<em>引号类型</em> ：无引号；
+<em>外边距</em> ：左外边距是0.2倍的字体大小（可理解为左边框竖线在整个页面的相对位置）
+<em>内边距</em> ：上下左右的内边距都是0.2em（其中，左内边距可理解为引用的文字范围左边界距离左边框竖线的距离）如下图所示意。</p>
+</blockquote>
+<p><img alt="图片" loading="lazy" src="/posts/zwpfxo32tsgudtrjyfwclq/images/img_2.jpg"></p>
+<h2 id="标题">标题<a hidden class="anchor" aria-hidden="true" href="#标题">#</a></h2>
+<blockquote>
+<p>h1, h2, h3, h4, h5, h6 {
+margin: 20px 0 10px;
+padding: 0;
+font-style: bold!important;
+color: #009688!important;
+text-align: center!important;
+margin: 1.5em 5px!important;
+padding: 0.5em 1em!important;
+}</p>
+</blockquote>
+<p>含义是：</p>
+<blockquote>
+<p>一级标题到六级标题的通用属性设置
+<em>外边距</em> ：上外边距为20px 右外边距为0 下外边距为10px 做外边距为0；
+<em>内边距</em> ：上右下左内边距都为0！优先；
+<em>字体</em> ：粗体！优先；
+<em>颜色</em> ：#009688!优先；
+<em>文本对齐</em> ：居中！优先；
+<em>外边距</em> ：上下外边距都为1.5倍的字号大小 左右外边距都为5px！优先；
+<em>内边距</em> ：上下内边距都为0.5倍的字号大小 左右内边距都为1倍字号大小！优先；</p>
+</blockquote>
+<h4 id="一级标题">一级标题<a hidden class="anchor" aria-hidden="true" href="#一级标题">#</a></h4>
+<blockquote>
+<p>h1 {
+font-size: 24px!important;
+border-bottom: 1px solid #ddd!important;
+}</p>
+</blockquote>
+<p>含义：</p>
+<blockquote>
+<p><em>一级标题</em>
+<em>字体大小</em> ：24px！优先；
+<em>底部边框</em> ：1px 实体 #ddd颜色！优先；</p>
+</blockquote>
+<h4 id="二级标题">二级标题<a hidden class="anchor" aria-hidden="true" href="#二级标题">#</a></h4>
+<blockquote>
+<p>h2 {
+font-size: 20px!important;
+border-bottom: 1px solid #eee!important;
+}</p>
+</blockquote>
+<p>含义：</p>
+<blockquote>
+<p><em>二级标题</em>
+<em>字体大小</em> ：20px！优先；
+<em>底部边框</em> ：1px 实体 #eee颜色！优先；</p>
+</blockquote>
+<h4 id="三级标题">三级标题<a hidden class="anchor" aria-hidden="true" href="#三级标题">#</a></h4>
+<blockquote>
+<p>h3 {
+font-size: 18px;
+}</p>
+</blockquote>
+<p>含义：</p>
+<blockquote>
+<p><em>三级标题</em>
+<em>字号</em> ：18px；</p>
+</blockquote>
+<h4 id="四级标题">四级标题<a hidden class="anchor" aria-hidden="true" href="#四级标题">#</a></h4>
+<blockquote>
+<p>h4 {
+font-size: 16px;
+}</p>
+</blockquote>
+<p>含义：</p>
+<blockquote>
+<p><em>四级标题</em>
+<em>字号</em> ：16px；</p>
+</blockquote>
+<p>以上为笑来老师所用css中的主要内容，也是常用样式css的主要内容，其中关于表格的部分没有写出来，是觉得通常公众号文章最重要的是几个级别的标题、强调、引用、分隔线这几部分。</p>
+<h2 id="注意细节">注意细节<a hidden class="anchor" aria-hidden="true" href="#注意细节">#</a></h2>
+<p>定义css文件时，一定注意标点符号的格式，用英文格式。</p>
+<p>每一级标题中都可以自定义其大小、颜色、位置、行距等等。</p>
+<p>用Markdown格式书写文档时，每一段结束时要空一行，这样在公众号编辑器中最终呈现效果 才有段间距。</p>
+<p>从Ulysses或其他编辑器中复制Markdown文档到公众号编辑器时，在粘贴之后，尽量先完成全部的后续编辑之后再渲染，后续编辑包括插图、定义超链接等等。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://jinjin123.com/posts/qnf9wrdueyx20fejv2-1zg/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>教是更好的学</span>
+  </a>
+  <a class="next" href="https://jinjin123.com/posts/5ik7osbc3w8e6cwmssmtug/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>最好的输入软件——Markdown写作之Ulysses(及格版)</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://jinjin123.com/">金哥的思考</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

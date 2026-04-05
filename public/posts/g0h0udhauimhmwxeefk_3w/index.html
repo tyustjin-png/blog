@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>遍历性的启示 | 金哥的思考</title>
+<meta name="keywords" content="">
+<meta name="description" content="对系统来说，遍历性是反脆弱的，但系统的遍历性对个人来说，不是反脆弱的">
+<meta name="author" content="金金视界">
+<link rel="canonical" href="https://jinjin123.com/posts/g0h0udhauimhmwxeefk_3w/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.199042e659bc7245f5609d333d6c044eb554a0640849bb874e1dff8eb0f57209.css" integrity="sha256-GZBC5lm8ckX1YJ0zPWwETrVUoGQISbuHTh3/jrD1cgk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jinjin123.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jinjin123.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jinjin123.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jinjin123.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jinjin123.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://jinjin123.com/posts/g0h0udhauimhmwxeefk_3w/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+.home-banner-wrap{margin:0 0 1.25rem 0}
+.home-banner{width:100%;display:block;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+@media (max-width:768px){.home-banner-wrap{margin:0 0 1rem 0}.home-banner{border-radius:14px}}
+</style>
+<meta property="og:url" content="https://jinjin123.com/posts/g0h0udhauimhmwxeefk_3w/">
+  <meta property="og:site_name" content="金哥的思考">
+  <meta property="og:title" content="遍历性的启示">
+  <meta property="og:description" content="对系统来说，遍历性是反脆弱的，但系统的遍历性对个人来说，不是反脆弱的">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-09-06T00:00:00+08:00">
+    <meta property="article:modified_time" content="2025-09-06T00:00:00+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="遍历性的启示">
+  <meta name="twitter:description" content="对系统来说，遍历性是反脆弱的，但系统的遍历性对个人来说，不是反脆弱的">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jinjin123.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "遍历性的启示",
+      "item": "https://jinjin123.com/posts/g0h0udhauimhmwxeefk_3w/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "遍历性的启示",
+  "name": "遍历性的启示",
+  "description": "对系统来说，遍历性是反脆弱的，但系统的遍历性对个人来说，不是反脆弱的",
+  "keywords": [
+    
+  ],
+  "articleBody": "一定会爆仓的玩家 在塔勒布的《非对称风险》一书中，有这样一个思维游戏。\n游戏有两种情形，首先在第一种情形下，100个人在某特定时间段内携带固定数量的钱去赌场。这些人当中有可能赔，也有可能赚钱。各自独立，互不影响，我们只需要计算一下回来的人口袋里剩下的钱，就可以计算出他们的总体收益。\n假如说，根据这个样本可以很容易地计算出其中大约有1%的赌徒会爆仓，如果一直重复这个过程，你会得到与之前相同的比值，即在同一时间段内，平均有1%的赌徒爆仓\n第二种情形，是假设你的表弟从固定的金额开始，连续100天去赌场下注。在第28天的时候，你的表弟不幸爆仓了，那么对于他而言，还会有第29天吗？不会有了，因为他触发了自己的“爆仓点”，在游戏中他已经永久地出局了。\n也就是说，100个赌徒在1天时间里的成功概率，并不适用于你表弟在100天时间里的赌运。或者说不等于你表弟在100天里不爆仓的概率。\n这就是说，同一时间一群人不爆仓概率称为集合概率，而一段时间内一个人连续去100天的不爆仓概率，称为时间概率。第一种情形涉及的是一群人，而第二种情形则涉及一个人穿越一系列时间，二者不同的话，在数学上，这就叫“非遍历性”。如果集合概率和时间概率相同，就叫“有遍历性”。\n我们再来看个属于“遍历性”的例子。\n例如要得出一个城市A、B两座公园哪一个更受欢迎，有两种办法： 第一种办法。在一定的时间段考察两个公园（在空间上考察）的人数，人数多的为更受欢迎公园；\n第二种办法。随机选择一名市民，跟踪足够长的时间（在时间上考察）来统计他去两个公园的次数，去得多的为更受欢迎公园。\n如果这个两个结果始终一致，则表现为遍历性。\n这是维基百科在给出遍历性的定义时，所举的例子。\n“遍历性”就是统计结果在时间和空间上的统一性，表现为时间均值等于空间均值。\n从字面意思看，“遍”，布满，全面；“历”，经历。“遍历”也就是“经历所有的可能”。\n“遍历性”的通俗解释，就是如果给足够长的时间，空间上的每个位置每种可能都会被经历。\n也就是说，如果某项随机活动是具有遍历性的，那我们知道它在空间上多种可能，就可以预测时间长度上可能发生的情况，或者某件事情发生的概率。\n反过来，塔勒布进一步解释：\n如果有一个随机过程，其过往的历史概率不能适用于其未来的情景，那么这个随机过程就不具有遍历性。\n而一个随机过程，却不具有遍历性，其原因就是因为系统存在一个类似于“叫停”的机制，一旦随机过程的状态出发这个“叫停”的机制，活动就停止了。\n就像一个人连续的下注，一旦爆仓，就出局。\n有句俗话说“淹死的都是会水的”，不是因为“会水（会游泳）”才出事，而是会水就更可能经常去游泳，只要持续的重复游泳，就一直面临那种风险，只要次数足够多，一定会“遍历”到最不利的那种情形。\n在非遍历性的随机过程里，竟然会导致“一定会叫停”、“一定会出局”的结果，这才是我们应该关注的。\n而非遍历性的两个关键的因素是“ 风险 ”和“ 持续的重复活动而暴露在这个风险之下 ”。\n风险 风险是客观存在的。\n一种是自然存在的客观风险，比如火灾、地震、洪水等。\n一种是主观造成的风险场景，比如酒驾、闯红灯、赌博等。\n人总是对客观存在的风险心有余悸，而对主观造成的风险迟钝无感。\n可能是因为，前者都是不可控的结果呈现，后者有自己的参与，而人往往高估自己的能力，觉得风险可控。\n但风险是否会转化为伤害，要看下面这点。\n持续的重复活动而暴露在这个风险之下 如果是客观风险，个体无法控制，其随机发生的次数是反应在时间尺度上。\n时间够长，地震总有发生……\n而主观造成的风险，关键看是否持续的主动重复。\n总是闯红灯，多半会出事；总是赌博，一定会爆仓。\n即\n时间够长，遍历客观风险。\n次数够多，遍历主观风险。\n投资中的遍历性——遍历牛顶，也遍历低谷 市场是客观的，K线走势和价格变化是不受你我控制的。主观能控制的只是你我的具体操作。\n时间够长，遍历所有涨跌形态和价格区间。\n操作次数够多，遍历爆仓和翻倍。结合害怕错过和厌恶损失的本性，更多的会是爆仓。\n如果你在某次小概率的爆仓风险中得以幸存，继续重复这种行为，最终你爆仓的概率将会是100%。这里有容易让人产生困惑的地方，小概率事件中的风险是一次性的，在第一次事件中幸存下来，并不会增加第二次小概率事件中的风险，因为事件是相互独立的，这看起来似乎是合理的解释。对这个问题，我们可以这样理解：持续暴露在“小概率”风险之下的次数累积，即使爆仓风险的概率小到1‱，那么在持续的、重复的过程中爆仓概率最终会越来越接近100%。\n主观的感性，其实会放大单次操作爆仓的概率。\n如何在投资中生存 既然市场会遍历周期，只要一直在市场里，一定会经历牛市。\n也会遍历各种极端的好和极端的差，首先要注意的是别被系统的极端差的情况波及而挂掉，其次也要避免极端的好出现时，自己不在，毕竟闪电劈下来的时候，是少数。\n因为投资领域的极端情况，往往风险与机遇并存。\n永远为此做好准备，就能在来临时抓住机会。\n怎么做呢？\n面对风险，有预防措施； 不主动制造主观风险，比如参与杠杆交易和合约交易。\n风险触发，有应对策略。 提前预演和准备，一旦暴涨或者暴跌来临，该如何应对。\n我们的大脑必须习惯于对那些可以把你“叫停”的极端风险说“不”。许多方法都可以赚钱，且完全不必触发极端风险。\n对多数人来说，那就是\n买的足够便宜（这点有专门讲解）\n永不满仓，永远留有现金\n不加杠杆，不做合约\n设置止损机制\n“遍历”是人生的普遍期望 很多人在被问到有什么期望时，都会回答：\n“我想去看看。。。”\n“我想去吃一次。。。”\n“我想去体验一下。。。”\n就连餐馆吃饭，也有人想的是“照单来一份”。\n我们本能的想去经历和体验更多的未知。\n这时，活得久就是关键，保持身体健康，就是我们拥有遍历性的资本。\n广义的非遍历性 上面我们用带有“叫停”机制的随机过程，来阐述非遍历性，从更广义的概念来看，就是如果随机过程会触发某种机制，这种机制会使随机过程改变原来的可能产生的状态，进入一种新的可能状态的集合，就可称为为非遍历性。\n拥有“叫停”机制的随机过程，是属于非遍历性的一种情况，比如一旦爆仓，就处于出局的状态。\n还有可能是类似“跃迁”的机制，一旦触发，就会进入另一个层面。\n就像我们的父辈当年推荐上大学的时期，谁能被推荐了，那完全是进入了另一个人生轨迹。\n或者像修真小说里的修仙者，当他们修为达到一定程度，就要渡劫，渡过去，就进入仙界，成为仙人；若是失败，则肉身毁灭，只能成为散仙，游走人世间。\n非遍历性是一种吸收态：\n完全遍历性的反面是一种吸收态。吸收态这个术语源于物理学中的粒子运动，当粒子撞击上一个吸收壁，它们会被吸收或粘住。吸收壁就像是一个陷阱，一旦被吸收进去（无论是好的还是坏的结果），就出不来了。\n要实现完全的遍历性，就不能有吸收壁，也不能有实质性的不可逆性。\n遍历性和非遍历性是随机过程的两种特性，不存在好坏，但理解这个概念能够帮我们看清不同的领域，事物的发展变化是什么样的，也帮助我们做更理性的选择。\n对于不可抗力的风险，我们要有遍历性，经历那些大事件，大波动也不至于“挂掉”；\n反过来，我们可否利用非遍历性呢，就是一旦触发某种机制，我们会从原有状态“跃迁”到更好的状态。\n其实也是有的， 公开创作、分享学习/笔记、拜访高人、送礼物给大家、全力以赴每一次合作，都是如此。\n遍历性和个人 时代的一粒灰尘，落在个人头上就是一座山。\n对系统来说，遍历性是反脆弱的，但系统的遍历性对个人来说，不是反脆弱的。\n不要把资源和精力浪费在自己不渴望的事情上； 不要用一次成败定义整条人生曲线； 不要把极小概率的清零风险当成可承受的波动； 不要过度杠杆与硬扛回撤； 不要在坏路径上死撑——到阈值就叫停； 不要在好路径上吝啬加码； 不要让现金流与健康同时见底； 不要只押单一平台、单一叙事、单一技能； 不要把运气当能力、把倒霉当宿命； 不要错过把成果固化为资产的窗口； 不要卖掉选择权——尽量保留可逆性与退出权； 不要不系安全带； 不要炫富； 不要“没有风险共担”的合作\n别把系统层的风险集中到个人身上；把它拆散给时间、组合、人群，让我们的个人轨迹更接近“群体能扛住的那条平均线”。\n",
+  "wordCount" : "3273",
+  "inLanguage": "zh",
+  "datePublished": "2025-09-06T00:00:00+08:00",
+  "dateModified": "2025-09-06T00:00:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "金金视界"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jinjin123.com/posts/g0h0udhauimhmwxeefk_3w/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "金哥的思考",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinjin123.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jinjin123.com/" accesskey="h" title="金哥的思考 (Alt + H)">金哥的思考</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jinjin123.com/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/dashboard/" title="定投面板">
+                    <span>定投面板</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/investing/" title="分区间定投">
+                    <span>分区间定投</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/ai-tools/" title="AI工具箱">
+                    <span>AI工具箱</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/methodology/" title="方法论">
+                    <span>方法论</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jinjin123.com/">主页</a>&nbsp;»&nbsp;<a href="https://jinjin123.com/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      遍历性的启示
+    </h1>
+    <div class="post-meta"><span title='2025-09-06 00:00:00 +0800 CST'>2025年9月6日</span>&nbsp;·&nbsp;<span>7 分钟</span>&nbsp;·&nbsp;<span>3273 字</span>&nbsp;·&nbsp;<span>金金视界</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e4%b8%80%e5%ae%9a%e4%bc%9a%e7%88%86%e4%bb%93%e7%9a%84%e7%8e%a9%e5%ae%b6" aria-label="一定会爆仓的玩家">一定会爆仓的玩家</a></li>
+                <li>
+                    <a href="#%e9%a3%8e%e9%99%a9" aria-label="风险">风险</a></li>
+                <li>
+                    <a href="#%e6%8c%81%e7%bb%ad%e7%9a%84%e9%87%8d%e5%a4%8d%e6%b4%bb%e5%8a%a8%e8%80%8c%e6%9a%b4%e9%9c%b2%e5%9c%a8%e8%bf%99%e4%b8%aa%e9%a3%8e%e9%99%a9%e4%b9%8b%e4%b8%8b" aria-label="持续的重复活动而暴露在这个风险之下">持续的重复活动而暴露在这个风险之下</a></li>
+                <li>
+                    <a href="#%e6%8a%95%e8%b5%84%e4%b8%ad%e7%9a%84%e9%81%8d%e5%8e%86%e6%80%a7%e9%81%8d%e5%8e%86%e7%89%9b%e9%a1%b6%e4%b9%9f%e9%81%8d%e5%8e%86%e4%bd%8e%e8%b0%b7" aria-label="投资中的遍历性——遍历牛顶，也遍历低谷">投资中的遍历性——遍历牛顶，也遍历低谷</a></li>
+                <li>
+                    <a href="#%e5%a6%82%e4%bd%95%e5%9c%a8%e6%8a%95%e8%b5%84%e4%b8%ad%e7%94%9f%e5%ad%98" aria-label="如何在投资中生存">如何在投资中生存</a></li>
+                <li>
+                    <a href="#%e9%81%8d%e5%8e%86%e6%98%af%e4%ba%ba%e7%94%9f%e7%9a%84%e6%99%ae%e9%81%8d%e6%9c%9f%e6%9c%9b" aria-label="“遍历”是人生的普遍期望">“遍历”是人生的普遍期望</a></li>
+                <li>
+                    <a href="#%e5%b9%bf%e4%b9%89%e7%9a%84%e9%9d%9e%e9%81%8d%e5%8e%86%e6%80%a7" aria-label="广义的非遍历性">广义的非遍历性</a></li>
+                <li>
+                    <a href="#%e9%81%8d%e5%8e%86%e6%80%a7%e5%92%8c%e4%b8%aa%e4%ba%ba" aria-label="遍历性和个人">遍历性和个人</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h3 id="一定会爆仓的玩家">一定会爆仓的玩家<a hidden class="anchor" aria-hidden="true" href="#一定会爆仓的玩家">#</a></h3>
+<p>在塔勒布的《非对称风险》一书中，有这样一个思维游戏。</p>
+<p>游戏有两种情形，首先在第一种情形下，100个人在某特定时间段内携带固定数量的钱去赌场。这些人当中有可能赔，也有可能赚钱。各自独立，互不影响，我们只需要计算一下回来的人口袋里剩下的钱，就可以计算出他们的总体收益。</p>
+<p>假如说，根据这个样本可以很容易地计算出其中大约有1%的赌徒会爆仓，如果一直重复这个过程，你会得到与之前相同的比值，即在同一时间段内，平均有1%的赌徒爆仓</p>
+<p>第二种情形，是假设你的表弟从固定的金额开始，连续100天去赌场下注。在第28天的时候，你的表弟不幸爆仓了，那么对于他而言，还会有第29天吗？不会有了，因为他触发了自己的“爆仓点”，在游戏中他已经永久地出局了。</p>
+<p>也就是说，100个赌徒在1天时间里的成功概率，并不适用于你表弟在100天时间里的赌运。或者说不等于你表弟在100天里不爆仓的概率。</p>
+<p>这就是说，同一时间一群人不爆仓概率称为集合概率，而一段时间内一个人连续去100天的不爆仓概率，称为时间概率。第一种情形涉及的是一群人，而第二种情形则涉及一个人穿越一系列时间，二者不同的话，在数学上，这就叫“非遍历性”。如果集合概率和时间概率相同，就叫“有遍历性”。</p>
+<p>我们再来看个属于“遍历性”的例子。</p>
+<blockquote>
+<p>例如要得出一个城市A、B两座公园哪一个更受欢迎，有两种办法：
+第一种办法。在一定的时间段考察两个公园（在空间上考察）的人数，人数多的为更受欢迎公园；</p>
+<p>第二种办法。随机选择一名市民，跟踪足够长的时间（在时间上考察）来统计他去两个公园的次数，去得多的为更受欢迎公园。</p>
+<p>如果这个两个结果始终一致，则表现为遍历性。</p>
+</blockquote>
+<p>这是维基百科在给出遍历性的定义时，所举的例子。</p>
+<blockquote>
+<p>“遍历性”就是统计结果在时间和空间上的统一性，表现为时间均值等于空间均值。</p>
+</blockquote>
+<p>从字面意思看，“遍”，布满，全面；“历”，经历。“遍历”也就是“经历所有的可能”。</p>
+<p>“遍历性”的通俗解释，就是如果给足够长的时间，空间上的每个位置每种可能都会被经历。</p>
+<p>也就是说，如果某项随机活动是具有遍历性的，那我们知道它在空间上多种可能，就可以预测时间长度上可能发生的情况，或者某件事情发生的概率。</p>
+<p>反过来，塔勒布进一步解释：</p>
+<blockquote>
+<p>如果有一个随机过程，其过往的历史概率不能适用于其未来的情景，那么这个随机过程就不具有遍历性。</p>
+</blockquote>
+<p>而一个随机过程，却不具有遍历性，其原因就是因为系统存在一个类似于“叫停”的机制，一旦随机过程的状态出发这个“叫停”的机制，活动就停止了。</p>
+<p>就像一个人连续的下注，一旦爆仓，就出局。</p>
+<p>有句俗话说“淹死的都是会水的”，不是因为“会水（会游泳）”才出事，而是会水就更可能经常去游泳，只要持续的重复游泳，就一直面临那种风险，只要次数足够多，一定会“遍历”到最不利的那种情形。</p>
+<p>在非遍历性的随机过程里，竟然会导致“一定会叫停”、“一定会出局”的结果，这才是我们应该关注的。</p>
+<p>而非遍历性的两个关键的因素是“ <strong>风险</strong> ”和“ <strong>持续的重复活动而暴露在这个风险之下</strong> ”。</p>
+<h3 id="风险">风险<a hidden class="anchor" aria-hidden="true" href="#风险">#</a></h3>
+<p>风险是客观存在的。</p>
+<p>一种是自然存在的客观风险，比如火灾、地震、洪水等。</p>
+<p>一种是主观造成的风险场景，比如酒驾、闯红灯、赌博等。</p>
+<p>人总是对客观存在的风险心有余悸，而对主观造成的风险迟钝无感。</p>
+<p>可能是因为，前者都是不可控的结果呈现，后者有自己的参与，而人往往高估自己的能力，觉得风险可控。</p>
+<p>但风险是否会转化为伤害，要看下面这点。</p>
+<h3 id="持续的重复活动而暴露在这个风险之下">持续的重复活动而暴露在这个风险之下<a hidden class="anchor" aria-hidden="true" href="#持续的重复活动而暴露在这个风险之下">#</a></h3>
+<p>如果是客观风险，个体无法控制，其随机发生的次数是反应在时间尺度上。</p>
+<p>时间够长，地震总有发生……</p>
+<p>而主观造成的风险，关键看是否持续的主动重复。</p>
+<p>总是闯红灯，多半会出事；总是赌博，一定会爆仓。</p>
+<p>即</p>
+<blockquote>
+<p>时间够长，遍历客观风险。</p>
+<p>次数够多，遍历主观风险。</p>
+</blockquote>
+<h3 id="投资中的遍历性遍历牛顶也遍历低谷">投资中的遍历性——遍历牛顶，也遍历低谷<a hidden class="anchor" aria-hidden="true" href="#投资中的遍历性遍历牛顶也遍历低谷">#</a></h3>
+<p>市场是客观的，K线走势和价格变化是不受你我控制的。主观能控制的只是你我的具体操作。</p>
+<p>时间够长，遍历所有涨跌形态和价格区间。</p>
+<p>操作次数够多，遍历爆仓和翻倍。结合害怕错过和厌恶损失的本性，更多的会是爆仓。</p>
+<blockquote>
+<p>如果你在某次小概率的爆仓风险中得以幸存，继续重复这种行为，最终你爆仓的概率将会是100%。这里有容易让人产生困惑的地方，小概率事件中的风险是一次性的，在第一次事件中幸存下来，并不会增加第二次小概率事件中的风险，因为事件是相互独立的，这看起来似乎是合理的解释。对这个问题，我们可以这样理解：持续暴露在“小概率”风险之下的次数累积，即使爆仓风险的概率小到1‱，那么在持续的、重复的过程中爆仓概率最终会越来越接近100%。</p>
+</blockquote>
+<p>主观的感性，其实会放大单次操作爆仓的概率。</p>
+<h3 id="如何在投资中生存">如何在投资中生存<a hidden class="anchor" aria-hidden="true" href="#如何在投资中生存">#</a></h3>
+<p>既然市场会遍历周期，只要一直在市场里，一定会经历牛市。</p>
+<p>也会遍历各种极端的好和极端的差，首先要注意的是别被系统的极端差的情况波及而挂掉，其次也要避免极端的好出现时，自己不在，毕竟闪电劈下来的时候，是少数。</p>
+<p>因为投资领域的极端情况，往往风险与机遇并存。</p>
+<p>永远为此做好准备，就能在来临时抓住机会。</p>
+<p>怎么做呢？</p>
+<blockquote>
+<p>面对风险，有预防措施；
+不主动制造主观风险，比如参与杠杆交易和合约交易。</p>
+<p>风险触发，有应对策略。
+提前预演和准备，一旦暴涨或者暴跌来临，该如何应对。</p>
+</blockquote>
+<p>我们的大脑必须习惯于对那些可以把你“叫停”的极端风险说“不”。许多方法都可以赚钱，且完全不必触发极端风险。</p>
+<p>对多数人来说，那就是</p>
+<blockquote>
+<p>买的足够便宜（这点有专门讲解）</p>
+<p>永不满仓，永远留有现金</p>
+<p>不加杠杆，不做合约</p>
+<p>设置止损机制</p>
+</blockquote>
+<h3 id="遍历是人生的普遍期望">“遍历”是人生的普遍期望<a hidden class="anchor" aria-hidden="true" href="#遍历是人生的普遍期望">#</a></h3>
+<p>很多人在被问到有什么期望时，都会回答：</p>
+<p>“我想去看看。。。”</p>
+<p>“我想去吃一次。。。”</p>
+<p>“我想去体验一下。。。”</p>
+<p>就连餐馆吃饭，也有人想的是“照单来一份”。</p>
+<p>我们本能的想去经历和体验更多的未知。</p>
+<p>这时，活得久就是关键，保持身体健康，就是我们拥有遍历性的资本。</p>
+<h3 id="广义的非遍历性">广义的非遍历性<a hidden class="anchor" aria-hidden="true" href="#广义的非遍历性">#</a></h3>
+<p>上面我们用带有“叫停”机制的随机过程，来阐述非遍历性，从更广义的概念来看，就是如果随机过程会触发某种机制，这种机制会使随机过程改变原来的可能产生的状态，进入一种新的可能状态的集合，就可称为为非遍历性。</p>
+<p>拥有“叫停”机制的随机过程，是属于非遍历性的一种情况，比如一旦爆仓，就处于出局的状态。</p>
+<p>还有可能是类似“跃迁”的机制，一旦触发，就会进入另一个层面。</p>
+<p>就像我们的父辈当年推荐上大学的时期，谁能被推荐了，那完全是进入了另一个人生轨迹。</p>
+<p>或者像修真小说里的修仙者，当他们修为达到一定程度，就要渡劫，渡过去，就进入仙界，成为仙人；若是失败，则肉身毁灭，只能成为散仙，游走人世间。</p>
+<p>非遍历性是一种吸收态：</p>
+<blockquote>
+<p>完全遍历性的反面是一种吸收态。吸收态这个术语源于物理学中的粒子运动，当粒子撞击上一个吸收壁，它们会被吸收或粘住。吸收壁就像是一个陷阱，一旦被吸收进去（无论是好的还是坏的结果），就出不来了。</p>
+<p>要实现完全的遍历性，就不能有吸收壁，也不能有实质性的不可逆性。</p>
+</blockquote>
+<p>遍历性和非遍历性是随机过程的两种特性，不存在好坏，但理解这个概念能够帮我们看清不同的领域，事物的发展变化是什么样的，也帮助我们做更理性的选择。</p>
+<p>对于不可抗力的风险，我们要有遍历性，经历那些大事件，大波动也不至于“挂掉”；</p>
+<p>反过来，我们可否利用非遍历性呢，就是一旦触发某种机制，我们会从原有状态“跃迁”到更好的状态。</p>
+<p>其实也是有的， <strong>公开创作、分享学习/笔记、拜访高人、送礼物给大家、全力以赴每一次合作，都是如此。</strong></p>
+<h3 id="遍历性和个人">遍历性和个人<a hidden class="anchor" aria-hidden="true" href="#遍历性和个人">#</a></h3>
+<p>时代的一粒灰尘，落在个人头上就是一座山。</p>
+<p>对系统来说，遍历性是反脆弱的，但系统的遍历性对个人来说，不是反脆弱的。</p>
+<p>不要把资源和精力浪费在自己不渴望的事情上；
+不要用一次成败定义整条人生曲线；
+不要把极小概率的清零风险当成可承受的波动；
+不要过度杠杆与硬扛回撤；
+不要在坏路径上死撑——到阈值就叫停；
+不要在好路径上吝啬加码；
+不要让现金流与健康同时见底；
+不要只押单一平台、单一叙事、单一技能；
+不要把运气当能力、把倒霉当宿命；
+不要错过把成果固化为资产的窗口；
+不要卖掉选择权——尽量保留可逆性与退出权；
+不要不系安全带；
+不要炫富；
+不要“没有风险共担”的合作</p>
+<p>别把系统层的风险集中到个人身上；把它拆散给时间、组合、人群，让我们的个人轨迹更接近“群体能扛住的那条平均线”。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://jinjin123.com/posts/qq1rx5kdcsajywjzra_ckg/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>我的AI工具箱 #01：每日未读邮件快速总结</span>
+  </a>
+  <a class="next" href="https://jinjin123.com/posts/dlxpcyrrb5mthjyly-6ula/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>收获很大的复利人生课</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://jinjin123.com/">金哥的思考</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

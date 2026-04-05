@@ -75,10 +75,22 @@ menu:
       name: 定投面板
       url: /dashboard/
       weight: 22
+    - identifier: investing
+      name: 分区间定投
+      url: /investing/
+      weight: 23
+    - identifier: ai-tools
+      name: AI工具箱
+      url: /ai-tools/
+      weight: 24
+    - identifier: methodology
+      name: 方法论
+      url: /methodology/
+      weight: 25
     - identifier: about
       name: 关于
       url: /about/
-      weight: 25
+      weight: 30
 
 # 输出格式
 outputs:
