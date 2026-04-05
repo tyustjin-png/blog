@@ -2,31 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on 金哥的思考</title>
-    <link>http://localhost:8899/tags/</link>
+    <link>https://jinjin123.com/tags/</link>
     <description>Recent content in Tags on 金哥的思考</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8899/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jinjin123.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>http://localhost:8899/tags/ai/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8899/tags/ai/</guid>
+      <link>https://jinjin123.com/tags/ai/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://jinjin123.com/tags/ai/</guid>
       <description></description>
     </item>
     <item>
-      <title>思维模型</title>
-      <link>http://localhost:8899/tags/%E6%80%9D%E7%BB%B4%E6%A8%A1%E5%9E%8B/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8899/tags/%E6%80%9D%E7%BB%B4%E6%A8%A1%E5%9E%8B/</guid>
+      <title>OpenClaw</title>
+      <link>https://jinjin123.com/tags/openclaw/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://jinjin123.com/tags/openclaw/</guid>
       <description></description>
     </item>
     <item>
-      <title>效率</title>
-      <link>http://localhost:8899/tags/%E6%95%88%E7%8E%87/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8899/tags/%E6%95%88%E7%8E%87/</guid>
+      <title>系统架构</title>
+      <link>https://jinjin123.com/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://jinjin123.com/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>自动化</title>
+      <link>https://jinjin123.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://jinjin123.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,18 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on 金哥的思考</title>
-    <link>http://localhost:8899/categories/</link>
+    <link>https://jinjin123.com/categories/</link>
     <description>Recent content in Categories on 金哥的思考</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8899/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jinjin123.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>思考</title>
-      <link>http://localhost:8899/categories/%E6%80%9D%E8%80%83/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8899/categories/%E6%80%9D%E8%80%83/</guid>
-      <description></description>
+      <title>AI 工具箱</title>
+      <link>https://jinjin123.com/categories/ai/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://jinjin123.com/categories/ai/</guid>
+      <description>OpenClaw · Claude · 提效工作流</description>
+    </item>
+    <item>
+      <title>方法论 / 持续行动</title>
+      <link>https://jinjin123.com/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jinjin123.com/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/</guid>
+      <description>反脆弱思维 · 行动第一 · 写作输出</description>
+    </item>
+    <item>
+      <title>分区间定投</title>
+      <link>https://jinjin123.com/categories/%E5%88%86%E5%8C%BA%E9%97%B4%E5%AE%9A%E6%8A%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jinjin123.com/categories/%E5%88%86%E5%8C%BA%E9%97%B4%E5%AE%9A%E6%8A%95/</guid>
+      <description>链上数据 &#43; 技术指标，量化择时定投体系</description>
     </item>
   </channel>
 </rss>

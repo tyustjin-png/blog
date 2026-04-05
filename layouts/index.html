@@ -1,40 +1,64 @@
 {{- define "main" }}
 
-{{- if .Site.Params.homeInfoParams }}
-<article class="first-entry home-info">
-    <div class="home-banner-wrap">
-      <img class="home-banner" src="/images/home-banner.jpg" alt="金哥的思考 Banner" />
-    </div>
-    <header class="entry-header">
-        <h1>{{ .Site.Params.homeInfoParams.Title | markdownify }}</h1>
-    </header>
-    <div class="entry-content">
-        {{ .Site.Params.homeInfoParams.Content | markdownify }}
-    </div>
-    <footer class="entry-footer">
-        {{ partial "social_icons.html" site.Params.socialIcons }}
-    </footer>
-</article>
-{{- end }}
+{{/* ===== Hero 首屏 ===== */}}
+<section class="hero-home">
+  <h1>金哥的思考</h1>
+  <p class="hero-tagline">穿越周期的投资博主 · 用系统对抗人性</p>
+  <p class="hero-sub">"做在最多数量的平行宇宙中都能成功的事情。"</p>
+</section>
 
-{{- $pages := .RegularPages }}
-{{- if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-{{- $paginator := .Paginate $pages }}
-{{- range $index, $page := $paginator.Pages }}
-{{- if and $.IsHome (eq $index 0) (not $.Site.Params.homeInfoParams) }}{{- else }}
-<article class="post-entry">
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">{{ .Title }}</h2>
-  </header>
-  {{- if (ne .Description "") }}
-  <div class="entry-content"><p>{{ .Description }}</p></div>
-  {{- else if (ne .Summary "") }}
-  <div class="entry-content"><p>{{ .Summary | plainify }}</p></div>
+{{/* ===== 三大板块入口 ===== */}}
+<section class="pillars">
+
+  <a class="pillar-card" href="/categories/分区间定投/">
+    <span class="pillar-icon">📐</span>
+    <h2>分区间定投</h2>
+    <p>链上数据 + 技术指标，量化择时定投体系。用规则替代直觉，让系统穿越牛熊。</p>
+  </a>
+
+  <a class="pillar-card" href="/categories/ai/">
+    <span class="pillar-icon">🤖</span>
+    <h2>AI 工具箱</h2>
+    <p>OpenClaw · Claude · 提效工作流。深度玩家视角的 AI 实战笔记。</p>
+  </a>
+
+  <a class="pillar-card" href="/categories/方法论/">
+    <span class="pillar-icon">🔁</span>
+    <h2>方法论 / 持续行动</h2>
+    <p>反脆弱思维 · 行动第一 · 写作输出。慢慢来，不要停。</p>
+  </a>
+
+</section>
+
+{{/* ===== 最新文章 ===== */}}
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
+{{- if $pages }}
+<section class="recent-posts">
+  <h2 class="section-title">最新文章</h2>
+  {{- range first 6 $pages }}
+  <article class="post-entry">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{- .Title -}}</h2>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <footer class="entry-footer">
+      {{- partial "post_meta.html" . -}}
+    </footer>
+    {{- end }}
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
   {{- end }}
-  <footer class="entry-footer">{{ partial "post_meta.html" . }}</footer>
-  <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
-</article>
-{{- end }}
+
+  <div class="see-all">
+    <a href="/archives/">查看全部文章 →</a>
+  </div>
+</section>
 {{- end }}
 
 {{- end }}
