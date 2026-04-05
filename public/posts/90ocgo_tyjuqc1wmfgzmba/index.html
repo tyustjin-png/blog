@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>小龙虾打磨相对安全的自动定投链路 | 金哥的思考</title>
+<meta name="keywords" content="">
+<meta name="description" content="有OpenClaw带我跑：怎么搭一条从头到尾都安全的自动定投链路">
+<meta name="author" content="金金视界">
+<link rel="canonical" href="https://jinjin123.com/posts/90ocgo_tyjuqc1wmfgzmba/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.c0fdd91bfa41e3485b101432ab58f0ddc9bd84b1f0d2f9df007fbf7096a62781.css" integrity="sha256-wP3ZG/pB40hbEBQyq1jw3cm9hLHw0vnfAH&#43;/cJamJ4E=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jinjin123.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jinjin123.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jinjin123.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jinjin123.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jinjin123.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://jinjin123.com/posts/90ocgo_tyjuqc1wmfgzmba/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+.home-banner-wrap{margin:0 0 1.25rem 0}
+.home-banner{width:100%;display:block;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+@media (max-width:768px){.home-banner-wrap{margin:0 0 1rem 0}.home-banner{border-radius:14px}}
+</style>
+<meta property="og:url" content="https://jinjin123.com/posts/90ocgo_tyjuqc1wmfgzmba/">
+  <meta property="og:site_name" content="金哥的思考">
+  <meta property="og:title" content="小龙虾打磨相对安全的自动定投链路">
+  <meta property="og:description" content="有OpenClaw带我跑：怎么搭一条从头到尾都安全的自动定投链路">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-20T00:00:00+08:00">
+    <meta property="article:modified_time" content="2026-03-20T00:00:00+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="小龙虾打磨相对安全的自动定投链路">
+  <meta name="twitter:description" content="有OpenClaw带我跑：怎么搭一条从头到尾都安全的自动定投链路">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jinjin123.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "小龙虾打磨相对安全的自动定投链路",
+      "item": "https://jinjin123.com/posts/90ocgo_tyjuqc1wmfgzmba/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "小龙虾打磨相对安全的自动定投链路",
+  "name": "小龙虾打磨相对安全的自动定投链路",
+  "description": "有OpenClaw带我跑：怎么搭一条从头到尾都安全的自动定投链路",
+  "keywords": [
+    
+  ],
+  "articleBody": "为什么写这篇 让 AI 自动定投，技术上不难——脚本调 API，定时跑就完了。\n但真正折腾的是： 怎么安全地买。\nAPI Key 怎么存？怎么传？谁能碰？每个环节出问题都可能丢钱。\n好在有OpenClaw带我跑：怎么搭一条相对安全的自动定投链路。\n全流程 每天 8 点定时触发（或 TG 手动触发） ↓ 家里电脑 SSH 到云服务器 ↓ 云服务器从 1Password 实时读取 API Key（内存中，不存文件） ↓ 云服务器直连anan API 执行买入（固定 IP，在白名单里） ↓ 结果回传，推送到 TG\n简单点就是电脑只负责发一个指令：”去买”。真正干活的是云服务器——它自己去保险柜拿钥匙，自己开门买东西，买完把收据传回来。钥匙从头到尾没离开过云服务器，但也不保存在云服务器，不经过任何网络传输。\n三层设计 第一层：密钥零落盘 问题： API Key 存哪？\n大多数教程把 Key 明文写配置文件。电脑被黑、误传 GitHub、别人借电脑——都会泄露。\n方案： Key 存 1Password 保险柜，脚本每次通过 op read 临时读取，只在内存存在几秒，用完即弃，磁盘零明文。\n白话版：以前钥匙藏花盆下面，现在锁银行保险柜。每次开门去银行取，开完就还。花盆下面永远没钥匙。\n关键设计：独立保险库隔离。\n我专门为定投创建了一个独立的 1Password 保险库（Vault），里面只放 API Key 这一条数据。云服务器上的访问凭证（Service Account Token）只能打开这一个保险库，看不到我其他任何密码。\n第二层：服务器加固 云服务器是整套系统的核心节点，安全尽量做到极致：\nSSH 高位端口 + 密钥登录 + 仅内网可达\n端口从默认 22 改到 5 位数高位端口，避开 99% 的自动扫描 禁用密码登录，只认密钥——暴力猜密码彻底失效 SSH 端口只对 Tailscale 内网开放，公网完全看不到 防火墙零端口暴露\n整台服务器对公网暴露的端口数量： 零 所有管理端口都只允许 Tailscale 内网（100.0.0.0/8）访问 Fail2Ban 自动封禁恶意 IP，3 次错误锁 1 小时 API Key 每 90 天轮换\n去重新生成 Key，更新到 1Password 即可 脚本从 1Password 实时读取，换 Key 不用改任何代码 这台服务器就像一个隐形的保险箱——公网上看不到它的任何入口，只有通过专属加密通道（Tailscale）才能管理它。\n第三层：权限最小化（终极兜底） 就算前两层全部失守，还有最后一道防线：\nAPI 只开”现货交易”，不开”提现”。\n如果Key 泄漏能做什么？最多用你的钱买大饼（现货可以设置白名单交易对）。不能API提走。\n三层总览 层级 措施 一句话 密钥 1Password 零落盘 + 独立保险库 钥匙在保险柜，还是单独的保险柜 服务器 高位端口 + 密钥登录 + 零端口暴露 + Fail2Ban 隐形保险箱，公网看不到 权限 只交易不提 信用卡只能消费，不能取现 攻击者需要同时：突破 Tailscale 进入内网 → 拿到 SSH 密钥登录服务器 → 找到 1Password 凭证读出 Key → 然后发现……提不了。\n架构演进：为什么从五层砍到三层 第一版方案有五层防护：密钥零落盘、Tailscale 加密传输、Nginx 固定 IP 代理、服务器加固、权限最小化。听起来很安全，但实际跑起来问题不少：\nMac 上的 代理拦截了内网请求，定投失败 Tailscale 隧道偶尔断连，链路中断 Nginx 代理配置出错，API 请求被拒 五个环节排查问题像在破案 后来想通了一个问题： API Key 为什么要从家里电脑传到云服务器？直接让云服务器自己读不就完了？\n于是把脚本搬到了云服务器上。Key 从 1Password 直接读到内存，直连 API。不经过网络传输，不需要加密隧道中转，不需要 Nginx 代理。\n链路从 5 个环节缩到 2 个，砍掉了传输层和代理层——不是因为它们不安全，而是 不再需要 。最安全的网络传输，就是不传输。\n仍然存在的风险 没有绝对的安全，只能满足自己需求的情况下，尽量提高。\n1. 云服务器被入侵/本地Macmini = 全链路失守 所有东西都在这台服务器上——1Password 凭证、脚本、直连。好在：SSH 仅内网可达 + 密钥登录 + Fail2Ban + 公网零端口，被入侵概率极低。\n本地Macmini被入侵，就更是失守了，但要记得Macmini依然不要放私密的东西，我是Claude和OpenClaw装在Macmini上，日常用MBP远程调用它们。\n2. 有一个凭据仍是明文 1Password 的 Service Account Token 存在服务器本地文件里。总得有一把”开保险柜的钥匙”存在某处。但这把钥匙只能开一个独立保险库，里面只有一条数据。\n3. 定期换Key 建议 90 天换一次 API Key。\n底线：就算以上全部被利用，攻击者也只能帮你买，提不走。\n实际效果 磁盘零明文，密钥只在内存存在 3 秒 公网零端口暴露 API Key 不经过任何网络传输 搭建成本：已有电脑 + 服务器，额外 0 元 最后 还要注意定投的部分积累到一定程度要转移到硬件。\n当然最重要的还是需求导向，定投我是需要的，确定了标的，投入总额，买入时间区间之后，不应该有太多的精力耗费，所以自动化定投也是需要的，之前crcl没买够，现在也是计划这样的方式进行买入。\n不准备好最低精力损耗的执行方案的话，很有可能执行打折扣。\n链路相关：1Password CLI（感谢远明总的方案） + Tailscale + UFW + Fail2Ban 适用于：任何需要安全调用第三方 API 的自动化场景\n一起体验小龙虾OpenClaw的折腾，加油！\n",
+  "wordCount" : "1956",
+  "inLanguage": "zh",
+  "datePublished": "2026-03-20T00:00:00+08:00",
+  "dateModified": "2026-03-20T00:00:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "金金视界"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jinjin123.com/posts/90ocgo_tyjuqc1wmfgzmba/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "金哥的思考",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinjin123.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jinjin123.com/" accesskey="h" title="金哥的思考 (Alt + H)">金哥的思考</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jinjin123.com/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/dashboard/" title="定投面板">
+                    <span>定投面板</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jinjin123.com/">主页</a>&nbsp;»&nbsp;<a href="https://jinjin123.com/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      小龙虾打磨相对安全的自动定投链路
+    </h1>
+    <div class="post-meta"><span title='2026-03-20 00:00:00 +0800 CST'>2026年3月20日</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>1956 字</span>&nbsp;·&nbsp;<span>金金视界</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e5%86%99%e8%bf%99%e7%af%87" aria-label="为什么写这篇">为什么写这篇</a></li>
+                <li>
+                    <a href="#%e5%85%a8%e6%b5%81%e7%a8%8b" aria-label="全流程">全流程</a></li>
+                <li>
+                    <a href="#%e4%b8%89%e5%b1%82%e8%ae%be%e8%ae%a1" aria-label="三层设计">三层设计</a><ul>
+                        
+                <li>
+                    <a href="#%e7%ac%ac%e4%b8%80%e5%b1%82%e5%af%86%e9%92%a5%e9%9b%b6%e8%90%bd%e7%9b%98" aria-label="第一层：密钥零落盘">第一层：密钥零落盘</a></li>
+                <li>
+                    <a href="#%e7%ac%ac%e4%ba%8c%e5%b1%82%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%8a%a0%e5%9b%ba" aria-label="第二层：服务器加固">第二层：服务器加固</a></li>
+                <li>
+                    <a href="#%e7%ac%ac%e4%b8%89%e5%b1%82%e6%9d%83%e9%99%90%e6%9c%80%e5%b0%8f%e5%8c%96%e7%bb%88%e6%9e%81%e5%85%9c%e5%ba%95" aria-label="第三层：权限最小化（终极兜底）">第三层：权限最小化（终极兜底）</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%b8%89%e5%b1%82%e6%80%bb%e8%a7%88" aria-label="三层总览">三层总览</a></li>
+                <li>
+                    <a href="#%e6%9e%b6%e6%9e%84%e6%bc%94%e8%bf%9b%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bb%8e%e4%ba%94%e5%b1%82%e7%a0%8d%e5%88%b0%e4%b8%89%e5%b1%82" aria-label="架构演进：为什么从五层砍到三层">架构演进：为什么从五层砍到三层</a></li>
+                <li>
+                    <a href="#%e4%bb%8d%e7%84%b6%e5%ad%98%e5%9c%a8%e7%9a%84%e9%a3%8e%e9%99%a9" aria-label="仍然存在的风险">仍然存在的风险</a></li>
+                <li>
+                    <a href="#%e5%ae%9e%e9%99%85%e6%95%88%e6%9e%9c" aria-label="实际效果">实际效果</a></li>
+                <li>
+                    <a href="#%e6%9c%80%e5%90%8e" aria-label="最后">最后</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="为什么写这篇">为什么写这篇<a hidden class="anchor" aria-hidden="true" href="#为什么写这篇">#</a></h2>
+<p>让 AI 自动定投，技术上不难——脚本调 API，定时跑就完了。</p>
+<p>但真正折腾的是： <strong>怎么安全地买。</strong></p>
+<p>API Key 怎么存？怎么传？谁能碰？每个环节出问题都可能丢钱。</p>
+<p>好在有OpenClaw带我跑：怎么搭一条相对安全的自动定投链路。</p>
+<h2 id="全流程">全流程<a hidden class="anchor" aria-hidden="true" href="#全流程">#</a></h2>
+<p>每天 8 点定时触发（或 TG 手动触发）
+↓
+家里电脑 SSH 到云服务器
+↓
+云服务器从 1Password 实时读取 API Key（内存中，不存文件）
+↓
+云服务器直连anan API 执行买入（固定 IP，在白名单里）
+↓
+结果回传，推送到 TG</p>
+<p>简单点就是电脑只负责发一个指令：”去买”。真正干活的是云服务器——它自己去保险柜拿钥匙，自己开门买东西，买完把收据传回来。钥匙从头到尾没离开过云服务器，但也不保存在云服务器，不经过任何网络传输。</p>
+<h2 id="三层设计">三层设计<a hidden class="anchor" aria-hidden="true" href="#三层设计">#</a></h2>
+<h3 id="第一层密钥零落盘">第一层：密钥零落盘<a hidden class="anchor" aria-hidden="true" href="#第一层密钥零落盘">#</a></h3>
+<p><strong>问题：</strong> API Key 存哪？</p>
+<p>大多数教程把 Key 明文写配置文件。电脑被黑、误传 GitHub、别人借电脑——都会泄露。</p>
+<p><strong>方案：</strong> Key 存 1Password 保险柜，脚本每次通过 <code>op read</code> 临时读取，只在内存存在几秒，用完即弃，磁盘零明文。</p>
+<blockquote>
+<p>白话版：以前钥匙藏花盆下面，现在锁银行保险柜。每次开门去银行取，开完就还。花盆下面永远没钥匙。</p>
+</blockquote>
+<p><strong>关键设计：独立保险库隔离。</strong></p>
+<p>我专门为定投创建了一个独立的 1Password 保险库（Vault），里面只放 API Key 这一条数据。云服务器上的访问凭证（Service Account Token）只能打开这一个保险库，看不到我其他任何密码。</p>
+<h3 id="第二层服务器加固">第二层：服务器加固<a hidden class="anchor" aria-hidden="true" href="#第二层服务器加固">#</a></h3>
+<p>云服务器是整套系统的核心节点，安全尽量做到极致：</p>
+<p><strong>SSH 高位端口 + 密钥登录 + 仅内网可达</strong></p>
+<ul>
+<li>端口从默认 22 改到 5 位数高位端口，避开 99% 的自动扫描</li>
+<li>禁用密码登录，只认密钥——暴力猜密码彻底失效</li>
+<li>SSH 端口只对 Tailscale 内网开放，公网完全看不到</li>
+</ul>
+<p><strong>防火墙零端口暴露</strong></p>
+<ul>
+<li>整台服务器对公网暴露的端口数量： <strong>零</strong></li>
+<li>所有管理端口都只允许 Tailscale 内网（100.0.0.0/8）访问</li>
+<li>Fail2Ban 自动封禁恶意 IP，3 次错误锁 1 小时</li>
+</ul>
+<p><strong>API Key 每 90 天轮换</strong></p>
+<ul>
+<li>去重新生成 Key，更新到 1Password 即可</li>
+<li>脚本从 1Password 实时读取，换 Key 不用改任何代码</li>
+</ul>
+<blockquote>
+<p>这台服务器就像一个隐形的保险箱——公网上看不到它的任何入口，只有通过专属加密通道（Tailscale）才能管理它。</p>
+</blockquote>
+<h3 id="第三层权限最小化终极兜底">第三层：权限最小化（终极兜底）<a hidden class="anchor" aria-hidden="true" href="#第三层权限最小化终极兜底">#</a></h3>
+<p>就算前两层全部失守，还有最后一道防线：</p>
+<p><strong>API 只开”现货交易”，不开”提现”。</strong></p>
+<p>如果Key 泄漏能做什么？最多用你的钱买大饼（现货可以设置白名单交易对）。不能API提走。</p>
+<h2 id="三层总览">三层总览<a hidden class="anchor" aria-hidden="true" href="#三层总览">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>层级</th>
+          <th>措施</th>
+          <th>一句话</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>密钥</td>
+          <td>1Password 零落盘 + 独立保险库</td>
+          <td>钥匙在保险柜，还是单独的保险柜</td>
+      </tr>
+      <tr>
+          <td>服务器</td>
+          <td>高位端口 + 密钥登录 + 零端口暴露 + Fail2Ban</td>
+          <td>隐形保险箱，公网看不到</td>
+      </tr>
+      <tr>
+          <td>权限</td>
+          <td>只交易不提</td>
+          <td>信用卡只能消费，不能取现</td>
+      </tr>
+  </tbody>
+</table>
+<p>攻击者需要同时：突破 Tailscale 进入内网 → 拿到 SSH 密钥登录服务器 → 找到 1Password 凭证读出 Key → 然后发现……提不了。</p>
+<h2 id="架构演进为什么从五层砍到三层">架构演进：为什么从五层砍到三层<a hidden class="anchor" aria-hidden="true" href="#架构演进为什么从五层砍到三层">#</a></h2>
+<p>第一版方案有五层防护：密钥零落盘、Tailscale 加密传输、Nginx 固定 IP 代理、服务器加固、权限最小化。听起来很安全，但实际跑起来问题不少：</p>
+<ul>
+<li>Mac 上的 代理拦截了内网请求，定投失败</li>
+<li>Tailscale 隧道偶尔断连，链路中断</li>
+<li>Nginx 代理配置出错，API 请求被拒</li>
+<li>五个环节排查问题像在破案</li>
+</ul>
+<p>后来想通了一个问题： <strong>API Key 为什么要从家里电脑传到云服务器？直接让云服务器自己读不就完了？</strong></p>
+<p>于是把脚本搬到了云服务器上。Key 从 1Password 直接读到内存，直连 API。不经过网络传输，不需要加密隧道中转，不需要 Nginx 代理。</p>
+<p>链路从 5 个环节缩到 2 个，砍掉了传输层和代理层——不是因为它们不安全，而是 <strong>不再需要</strong> 。最安全的网络传输，就是不传输。</p>
+<h2 id="仍然存在的风险">仍然存在的风险<a hidden class="anchor" aria-hidden="true" href="#仍然存在的风险">#</a></h2>
+<p>没有绝对的安全，只能满足自己需求的情况下，尽量提高。</p>
+<p><strong>1. 云服务器被入侵/本地Macmini = 全链路失守</strong>
+所有东西都在这台服务器上——1Password 凭证、脚本、直连。好在：SSH 仅内网可达 + 密钥登录 + Fail2Ban + 公网零端口，被入侵概率极低。</p>
+<p>本地Macmini被入侵，就更是失守了，但要记得Macmini依然不要放私密的东西，我是Claude和OpenClaw装在Macmini上，日常用MBP远程调用它们。</p>
+<p><strong>2. 有一个凭据仍是明文</strong>
+1Password 的 Service Account Token 存在服务器本地文件里。总得有一把”开保险柜的钥匙”存在某处。但这把钥匙只能开一个独立保险库，里面只有一条数据。</p>
+<p><strong>3. 定期换Key</strong>
+建议 90 天换一次 API Key。</p>
+<p><strong>底线：就算以上全部被利用，攻击者也只能帮你买，提不走。</strong></p>
+<h2 id="实际效果">实际效果<a hidden class="anchor" aria-hidden="true" href="#实际效果">#</a></h2>
+<ul>
+<li>磁盘零明文，密钥只在内存存在 3 秒</li>
+<li>公网零端口暴露</li>
+<li>API Key 不经过任何网络传输</li>
+<li>搭建成本：已有电脑 + 服务器，额外 0 元</li>
+</ul>
+<h2 id="最后">最后<a hidden class="anchor" aria-hidden="true" href="#最后">#</a></h2>
+<p>还要注意定投的部分积累到一定程度要转移到硬件。</p>
+<p>当然最重要的还是需求导向，定投我是需要的，确定了标的，投入总额，买入时间区间之后，不应该有太多的精力耗费，所以自动化定投也是需要的，之前crcl没买够，现在也是计划这样的方式进行买入。</p>
+<p>不准备好最低精力损耗的执行方案的话，很有可能执行打折扣。</p>
+<hr>
+<p><em>链路相关：1Password CLI（感谢远明总的方案） + Tailscale + UFW + Fail2Ban</em>
+<em>适用于：任何需要安全调用第三方 API 的自动化场景</em></p>
+<p>一起体验小龙虾OpenClaw的折腾，加油！</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://jinjin123.com/posts/my-ai-system-architecture/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>我的AI助手系统架构：从零搭建到全自动运行</span>
+  </a>
+  <a class="next" href="https://jinjin123.com/posts/8c6fz_2j6aje3qdljnfw1w/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>Openclaw小龙虾助手会越来越聪明吗</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://jinjin123.com/">金哥的思考</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

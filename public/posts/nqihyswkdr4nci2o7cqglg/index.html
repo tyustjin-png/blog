@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>我的AI工具箱 #02｜Claude Code安全部署：如何让 AI 助理既强大又可控 | 金哥的思考</title>
+<meta name="keywords" content="">
+<meta name="description" content="这是《我的AI工具箱》系列的第二篇。安全部署的部署Claude Code。">
+<meta name="author" content="金金视界">
+<link rel="canonical" href="https://jinjin123.com/posts/nqihyswkdr4nci2o7cqglg/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.c0fdd91bfa41e3485b101432ab58f0ddc9bd84b1f0d2f9df007fbf7096a62781.css" integrity="sha256-wP3ZG/pB40hbEBQyq1jw3cm9hLHw0vnfAH&#43;/cJamJ4E=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jinjin123.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jinjin123.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jinjin123.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jinjin123.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jinjin123.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://jinjin123.com/posts/nqihyswkdr4nci2o7cqglg/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+.home-banner-wrap{margin:0 0 1.25rem 0}
+.home-banner{width:100%;display:block;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+@media (max-width:768px){.home-banner-wrap{margin:0 0 1rem 0}.home-banner{border-radius:14px}}
+</style>
+<meta property="og:url" content="https://jinjin123.com/posts/nqihyswkdr4nci2o7cqglg/">
+  <meta property="og:site_name" content="金哥的思考">
+  <meta property="og:title" content="我的AI工具箱 #02｜Claude Code安全部署：如何让 AI 助理既强大又可控">
+  <meta property="og:description" content="这是《我的AI工具箱》系列的第二篇。安全部署的部署Claude Code。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-26T00:00:00+08:00">
+    <meta property="article:modified_time" content="2026-01-26T00:00:00+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="我的AI工具箱 #02｜Claude Code安全部署：如何让 AI 助理既强大又可控">
+  <meta name="twitter:description" content="这是《我的AI工具箱》系列的第二篇。安全部署的部署Claude Code。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jinjin123.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "我的AI工具箱 #02｜Claude Code安全部署：如何让 AI 助理既强大又可控",
+      "item": "https://jinjin123.com/posts/nqihyswkdr4nci2o7cqglg/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "我的AI工具箱 #02｜Claude Code安全部署：如何让 AI 助理既强大又可控",
+  "name": "我的AI工具箱 #02｜Claude Code安全部署：如何让 AI 助理既强大又可控",
+  "description": "这是《我的AI工具箱》系列的第二篇。安全部署的部署Claude Code。",
+  "keywords": [
+    
+  ],
+  "articleBody": "这是《我的AI工具箱》系列的第二篇。安全部署的部署Claude Code。\n问题：Claude的权限很大 最近我一直在用Claude Code，它能直接读写文件、执行命令，堪称编程利器。\n有朋友建议说不要装在本地，强大全面可能也有相应的风险。\n我的MacBook上有工作文档以及其他比较私人的文件……让一个 AI 工具拥比较高的系统访问权限还是要注意，尤其是当我测试本地安装后，让Claude自己关闭访问其他文件夹的权限，只能访问当前项目文件夹，它做不到。\n问题来了： 能不能让Claude Code在一个隔离的环境里工作，既发挥它的能力，又保护我的主力机？\n方案：物理隔离 + 远程访问 我的需求是什么？用什么解决？\n核心需求 解决方案 为什么这样选 安全：隔离Claude权限 Macmini独立环境 闲置M4 性能够用 随处用：不受地域限制 Tailscale 虚拟局域网 穿透力强，异地可用 稳定：可靠的远程连接 SSH 终端操作 macOS 支持，稳定 具体是这个路径： 实操：部署 第一步：安装 Tailscale 两台电脑都装上Tailscale，登录同一个google账号，它们自动组成一个虚拟局域网。\n安装完成后，每台设备会获得一个 100.x.x.x 的内网 IP。\n第二步：通过 VSCode 远程连接 这里推荐用 VS Code，因为它不只是连接终端，还能直接编辑远程文件、管理项目，体验和本地开发一样。\n配置步骤：\n在 MacBook 上打开 VS Code，安装「Remote - SSH」扩展 按 Cmd + Shift + P ，输入 Remote-SSH: Connect to Host 输入 用户名@100.x.x.x （Mac mini 的 Tailscale IP） 用户名不确定？在 Mac mini 终端输入 whoami 即可查看 首次连接会询问是否信任，选择继续，然后输入 Mac mini 的密码 连接成功后，VS Code 左下角会显示远程主机名，终端也自动切换到 Mac mini 环境。\n第三步：安装 Claude Code 在 Mac mini 上直接通过终端安装 Claude Code：\nnpm install -g @anthropic-ai/claude-code 完成。现在你可以在 MacBook 上，通过 SSH 远程使用 Claude Code，而它只能访问 Mac mini 上的文件。\n进阶：提升稳定性 基础部署完成后，我让 Claude Code 帮我检查了 Mac mini 的配置，发现两个隐患，也直接给出了解决方案：\n问题 风险 解决方案 断电后不会自动重启 停电恢复后需要手动开机 sudo pmset -a autorestart 1 系统会自动休眠 休眠后 SSH 断开 sudo pmset -a sleep 0 执行这两条命令后，Mac mini 就变成了一台几乎「永远在线」的服务器。\n配置项 状态 参数 断电后自动重启 ✅ autorestart 1 系统永不休眠 ✅ sleep 0 Tailscale 开机自启 ✅ - SSH 服务保持运行 ✅ - 方案对比：为什么不用其他方式？ 在确定方案前，我对比了几种选择：\n方案 安全性 稳定性 随处可用 成本 Macmini+ Tailscale ★★★★★ ★★★★☆ ★★★★★ 一次性 云服务器 ★★★★☆ ★★★★☆ ★★★★★ 持续月费 本机 Docker ★★★☆☆ ★★★★☆ ★☆☆☆☆ 免费 本机虚拟机 ★★★★☆ ★★★☆☆ ★☆☆☆☆ 免费 Docker 和虚拟机虽然免费，但隔离不够彻底，而且外出时需要主力机保持开机。云服务器什么都好，就是每月要交租金。\nMac mini方案的缺点是依赖家庭网络和电，但这出问题的频率太低了，可以忽略。\n写在最后 这套方案我已经用了几天，体验很好。在异地，打开VScode就能连上家里的 Mac mini，让Claude Code帮我干活。\n更重要的是，MBP上的文件，不用担心被任何 AI 工具「不小心」读到。\n这是《我的AI工具箱》系列的第2篇。\n我相信未来每个人都会有自己的 AI 助理团队。我正在探索如何安全、高效地使用这些工具，并把经验分享出来。\n如果你在部署过程中遇到任何问题，欢迎留言或私信交流。\n下一篇预告：用 AI 搭建一套自动整理笔记的管理系统 ——让 AI 帮你把实时提交的笔记、文章、资料自动归类整理。感兴趣的话，点个关注不错过。\n",
+  "wordCount" : "1391",
+  "inLanguage": "zh",
+  "datePublished": "2026-01-26T00:00:00+08:00",
+  "dateModified": "2026-01-26T00:00:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "金金视界"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jinjin123.com/posts/nqihyswkdr4nci2o7cqglg/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "金哥的思考",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinjin123.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jinjin123.com/" accesskey="h" title="金哥的思考 (Alt + H)">金哥的思考</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jinjin123.com/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/dashboard/" title="定投面板">
+                    <span>定投面板</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jinjin123.com/">主页</a>&nbsp;»&nbsp;<a href="https://jinjin123.com/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      我的AI工具箱 #02｜Claude Code安全部署：如何让 AI 助理既强大又可控
+    </h1>
+    <div class="post-meta"><span title='2026-01-26 00:00:00 +0800 CST'>2026年1月26日</span>&nbsp;·&nbsp;<span>3 分钟</span>&nbsp;·&nbsp;<span>1391 字</span>&nbsp;·&nbsp;<span>金金视界</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e9%97%ae%e9%a2%98claude%e7%9a%84%e6%9d%83%e9%99%90%e5%be%88%e5%a4%a7" aria-label="问题：Claude的权限很大">问题：Claude的权限很大</a></li>
+                <li>
+                    <a href="#%e6%96%b9%e6%a1%88%e7%89%a9%e7%90%86%e9%9a%94%e7%a6%bb--%e8%bf%9c%e7%a8%8b%e8%ae%bf%e9%97%ae" aria-label="方案：物理隔离 &#43; 远程访问">方案：物理隔离 + 远程访问</a></li>
+                <li>
+                    <a href="#%e5%ae%9e%e6%93%8d%e9%83%a8%e7%bd%b2" aria-label="实操：部署">实操：部署</a><ul>
+                        
+                <li>
+                    <a href="#%e7%ac%ac%e4%b8%80%e6%ad%a5%e5%ae%89%e8%a3%85-tailscale" aria-label="第一步：安装 Tailscale">第一步：安装 Tailscale</a></li>
+                <li>
+                    <a href="#%e7%ac%ac%e4%ba%8c%e6%ad%a5%e9%80%9a%e8%bf%87-vscode-%e8%bf%9c%e7%a8%8b%e8%bf%9e%e6%8e%a5" aria-label="第二步：通过 VSCode 远程连接">第二步：通过 VSCode 远程连接</a></li>
+                <li>
+                    <a href="#%e7%ac%ac%e4%b8%89%e6%ad%a5%e5%ae%89%e8%a3%85-claude-code" aria-label="第三步：安装 Claude Code">第三步：安装 Claude Code</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e8%bf%9b%e9%98%b6%e6%8f%90%e5%8d%87%e7%a8%b3%e5%ae%9a%e6%80%a7" aria-label="进阶：提升稳定性">进阶：提升稳定性</a></li>
+                <li>
+                    <a href="#%e6%96%b9%e6%a1%88%e5%af%b9%e6%af%94%e4%b8%ba%e4%bb%80%e4%b9%88%e4%b8%8d%e7%94%a8%e5%85%b6%e4%bb%96%e6%96%b9%e5%bc%8f" aria-label="方案对比：为什么不用其他方式？">方案对比：为什么不用其他方式？</a></li>
+                <li>
+                    <a href="#%e5%86%99%e5%9c%a8%e6%9c%80%e5%90%8e" aria-label="写在最后">写在最后</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>这是《我的AI工具箱》系列的第二篇。安全部署的部署Claude Code。</p>
+<h3 id="问题claude的权限很大">问题：Claude的权限很大<a hidden class="anchor" aria-hidden="true" href="#问题claude的权限很大">#</a></h3>
+<p>最近我一直在用Claude Code，它能直接读写文件、执行命令，堪称编程利器。</p>
+<p>有朋友建议说不要装在本地，强大全面可能也有相应的风险。</p>
+<p>我的MacBook上有工作文档以及其他比较私人的文件……让一个 AI 工具拥比较高的系统访问权限还是要注意，尤其是当我测试本地安装后，让Claude自己关闭访问其他文件夹的权限，只能访问当前项目文件夹，它做不到。</p>
+<p>问题来了： <strong>能不能让Claude Code在一个隔离的环境里工作，既发挥它的能力，又保护我的主力机？</strong></p>
+<h3 id="方案物理隔离--远程访问">方案：物理隔离 + 远程访问<a hidden class="anchor" aria-hidden="true" href="#方案物理隔离--远程访问">#</a></h3>
+<p><strong>我的需求是什么？用什么解决？</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>核心需求</th>
+          <th>解决方案</th>
+          <th>为什么这样选</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>安全：隔离Claude权限</td>
+          <td>Macmini独立环境</td>
+          <td>闲置M4 性能够用</td>
+      </tr>
+      <tr>
+          <td>随处用：不受地域限制</td>
+          <td>Tailscale 虚拟局域网</td>
+          <td>穿透力强，异地可用</td>
+      </tr>
+      <tr>
+          <td>稳定：可靠的远程连接</td>
+          <td>SSH 终端操作</td>
+          <td>macOS 支持，稳定</td>
+      </tr>
+  </tbody>
+</table>
+<p>具体是这个路径：
+<img alt="图片" loading="lazy" src="/posts/nqihyswkdr4nci2o7cqglg/images/img_1.jpg"></p>
+<h3 id="实操部署">实操：部署<a hidden class="anchor" aria-hidden="true" href="#实操部署">#</a></h3>
+<h4 id="第一步安装-tailscale">第一步：安装 Tailscale<a hidden class="anchor" aria-hidden="true" href="#第一步安装-tailscale">#</a></h4>
+<p>两台电脑都装上Tailscale，登录同一个google账号，它们自动组成一个虚拟局域网。</p>
+<p>安装完成后，每台设备会获得一个 <code>100.x.x.x</code> 的内网 IP。</p>
+<h4 id="第二步通过-vscode-远程连接">第二步：通过 VSCode 远程连接<a hidden class="anchor" aria-hidden="true" href="#第二步通过-vscode-远程连接">#</a></h4>
+<p>这里推荐用 VS Code，因为它不只是连接终端，还能直接编辑远程文件、管理项目，体验和本地开发一样。</p>
+<p><strong>配置步骤：</strong></p>
+<ol>
+<li>在 MacBook 上打开 VS Code，安装「Remote - SSH」扩展</li>
+<li>按 <code>Cmd + Shift + P</code> ，输入 <code>Remote-SSH: Connect to Host</code></li>
+<li>输入 <code>用户名@100.x.x.x</code> （Mac mini 的 Tailscale IP）</li>
+</ol>
+<ul>
+<li>用户名不确定？在 Mac mini 终端输入 <code>whoami</code> 即可查看</li>
+</ul>
+<ol start="5">
+<li>首次连接会询问是否信任，选择继续，然后输入 Mac mini 的密码</li>
+</ol>
+<p>连接成功后，VS Code 左下角会显示远程主机名，终端也自动切换到 Mac mini 环境。</p>
+<h4 id="第三步安装-claude-code">第三步：安装 Claude Code<a hidden class="anchor" aria-hidden="true" href="#第三步安装-claude-code">#</a></h4>
+<p>在 Mac mini 上直接通过终端安装 Claude Code：</p>
+<pre tabindex="0"><code>npm install -g @anthropic-ai/claude-code
+</code></pre><p>完成。现在你可以在 MacBook 上，通过 SSH 远程使用 Claude Code，而它只能访问 Mac mini 上的文件。</p>
+<h3 id="进阶提升稳定性">进阶：提升稳定性<a hidden class="anchor" aria-hidden="true" href="#进阶提升稳定性">#</a></h3>
+<p>基础部署完成后，我让 Claude Code 帮我检查了 Mac mini 的配置，发现两个隐患，也直接给出了解决方案：</p>
+<table>
+  <thead>
+      <tr>
+          <th>问题</th>
+          <th>风险</th>
+          <th>解决方案</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>断电后不会自动重启</td>
+          <td>停电恢复后需要手动开机</td>
+          <td><code>sudo pmset -a autorestart 1</code></td>
+      </tr>
+      <tr>
+          <td>系统会自动休眠</td>
+          <td>休眠后 SSH 断开</td>
+          <td><code>sudo pmset -a sleep 0</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>执行这两条命令后，Mac mini 就变成了一台几乎「永远在线」的服务器。</p>
+<table>
+  <thead>
+      <tr>
+          <th>配置项</th>
+          <th>状态</th>
+          <th>参数</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>断电后自动重启</td>
+          <td>✅</td>
+          <td>autorestart 1</td>
+      </tr>
+      <tr>
+          <td>系统永不休眠</td>
+          <td>✅</td>
+          <td>sleep 0</td>
+      </tr>
+      <tr>
+          <td>Tailscale 开机自启</td>
+          <td>✅</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td>SSH 服务保持运行</td>
+          <td>✅</td>
+          <td>-</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="方案对比为什么不用其他方式">方案对比：为什么不用其他方式？<a hidden class="anchor" aria-hidden="true" href="#方案对比为什么不用其他方式">#</a></h3>
+<p>在确定方案前，我对比了几种选择：</p>
+<table>
+  <thead>
+      <tr>
+          <th>方案</th>
+          <th>安全性</th>
+          <th>稳定性</th>
+          <th>随处可用</th>
+          <th>成本</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Macmini+ Tailscale</strong></td>
+          <td>★★★★★</td>
+          <td>★★★★☆</td>
+          <td>★★★★★</td>
+          <td>一次性</td>
+      </tr>
+      <tr>
+          <td>云服务器</td>
+          <td>★★★★☆</td>
+          <td>★★★★☆</td>
+          <td>★★★★★</td>
+          <td>持续月费</td>
+      </tr>
+      <tr>
+          <td>本机 Docker</td>
+          <td>★★★☆☆</td>
+          <td>★★★★☆</td>
+          <td>★☆☆☆☆</td>
+          <td>免费</td>
+      </tr>
+      <tr>
+          <td>本机虚拟机</td>
+          <td>★★★★☆</td>
+          <td>★★★☆☆</td>
+          <td>★☆☆☆☆</td>
+          <td>免费</td>
+      </tr>
+  </tbody>
+</table>
+<p>Docker 和虚拟机虽然免费，但隔离不够彻底，而且外出时需要主力机保持开机。云服务器什么都好，就是每月要交租金。</p>
+<p>Mac mini方案的缺点是依赖家庭网络和电，但这出问题的频率太低了，可以忽略。</p>
+<h3 id="写在最后">写在最后<a hidden class="anchor" aria-hidden="true" href="#写在最后">#</a></h3>
+<p>这套方案我已经用了几天，体验很好。在异地，打开VScode就能连上家里的 Mac mini，让Claude Code帮我干活。</p>
+<p>更重要的是，MBP上的文件，不用担心被任何 AI 工具「不小心」读到。</p>
+<hr>
+<p><strong>这是《我的AI工具箱》系列的第2篇。</strong></p>
+<p>我相信未来每个人都会有自己的 AI 助理团队。我正在探索如何安全、高效地使用这些工具，并把经验分享出来。</p>
+<p>如果你在部署过程中遇到任何问题，欢迎留言或私信交流。</p>
+<p><strong>下一篇预告：用 AI 搭建一套自动整理笔记的管理系统</strong> ——让 AI 帮你把实时提交的笔记、文章、资料自动归类整理。感兴趣的话，点个关注不错过。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://jinjin123.com/posts/tecntmqxhwxwne-_ccaufa/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>我的AI工具箱 #03：我造了个「读刻」AI资料库，电脑手机都能用</span>
+  </a>
+  <a class="next" href="https://jinjin123.com/posts/qq1rx5kdcsajywjzra_ckg/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>我的AI工具箱 #01：每日未读邮件快速总结</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://jinjin123.com/">金哥的思考</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

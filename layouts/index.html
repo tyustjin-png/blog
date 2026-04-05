@@ -1,42 +1,86 @@
 {{- define "main" }}
 
-{{/* ===== Hero 首屏 ===== */}}
+{{/* ===== Hero 首屏 — 站点定义感 ===== */}}
 <section class="hero-home">
+  <p class="hero-label">Est. 2017 · 投资博主</p>
   <h1>金哥的思考</h1>
-  <p class="hero-tagline">穿越周期的投资博主 · 用系统对抗人性</p>
+  <p class="hero-tagline">穿越周期的投资实践者<br>用系统对抗人性，用写作穿越牛熊</p>
   <p class="hero-sub">"做在最多数量的平行宇宙中都能成功的事情。"</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">35+</span><span class="stat-label">篇文章</span></div>
+    <div class="stat"><span class="stat-num">7</span><span class="stat-label">年深耕</span></div>
+    <div class="stat"><span class="stat-num">3</span><span class="stat-label">大体系</span></div>
+  </div>
 </section>
 
-{{/* ===== 三大板块入口 ===== */}}
-<section class="pillars">
+<div class="home-divider"></div>
 
-  <a class="pillar-card" href="/categories/分区间定投/">
-    <span class="pillar-icon">📐</span>
-    <h2>分区间定投</h2>
-    <p>链上数据 + 技术指标，量化择时定投体系。用规则替代直觉，让系统穿越牛熊。</p>
-  </a>
-
-  <a class="pillar-card" href="/categories/ai/">
-    <span class="pillar-icon">🤖</span>
-    <h2>AI 工具箱</h2>
-    <p>OpenClaw · Claude · 提效工作流。深度玩家视角的 AI 实战笔记。</p>
-  </a>
-
-  <a class="pillar-card" href="/categories/方法论/">
-    <span class="pillar-icon">🔁</span>
-    <h2>方法论 / 持续行动</h2>
-    <p>反脆弱思维 · 行动第一 · 写作输出。慢慢来，不要停。</p>
-  </a>
-
+{{/* ===== 板块一：分区间定投 ===== */}}
+<section class="curated-section">
+  <div class="curated-header">
+    <span class="curated-icon">📐</span>
+    <div>
+      <h2><a href="/categories/分区间定投/">分区间定投</a></h2>
+      <p class="curated-desc">链上数据 + 技术指标，量化择时定投体系。用规则替代直觉，让系统穿越牛熊。</p>
+    </div>
+  </div>
+  <ul class="curated-list">
+    <li><a href="/posts/lnwwWhN7Suggfv9iQf7X7A/">分区间定投完整指南</a><span class="curated-tag">入门必读</span></li>
+    <li><a href="/posts/8uPY-mOT7QrpjzK3qv2n0Q/">比特币多50%的定投方法—分区间定投概述</a></li>
+    <li><a href="/posts/6_zgz3F4mRkoDWwFPKnAng/">九神估值指标（ahr999）还适用吗</a></li>
+    <li><a href="/posts/BNsCQjxibpY1MvA2JYYEMw/">定投为什么执行不下去？怎么解决</a></li>
+    <li><a href="/posts/90ocGo_TyjUQc1wmfGzMbA/">小龙虾打磨相对安全的自动定投链路</a></li>
+  </ul>
+  <p class="curated-more"><a href="/categories/分区间定投/">查看全部 →</a></p>
 </section>
 
-{{/* ===== 最新文章 ===== */}}
+{{/* ===== 板块二：AI 工具箱 ===== */}}
+<section class="curated-section">
+  <div class="curated-header">
+    <span class="curated-icon">🤖</span>
+    <div>
+      <h2><a href="/categories/ai/">AI 工具箱</a></h2>
+      <p class="curated-desc">OpenClaw · Claude · 提效工作流。深度玩家视角的 AI 实战笔记。</p>
+    </div>
+  </div>
+  <ul class="curated-list">
+    <li><a href="/posts/qQ1RX5KdcSAjyWJzrA_CKg/">我的AI工具箱 #01：每日未读邮件快速总结</a></li>
+    <li><a href="/posts/NQiHysWkdr4nCI2o7cQgLg/">AI工具箱 #02｜Claude Code 安全部署</a></li>
+    <li><a href="/posts/TECnTmQXhWxwNE-_CcAufA/">AI工具箱 #03：我造了个「读刻」AI资料库</a></li>
+    <li><a href="/posts/8C6FZ_2j6ajE3QdLJNFW1w/">OpenClaw 小龙虾助手会越来越聪明吗</a></li>
+    <li><a href="/posts/XLXb6yoF2cPa-ACxwIasdA/">AI 加持下，创作内容哪些环节不应该被替代</a></li>
+  </ul>
+  <p class="curated-more"><a href="/categories/ai/">查看全部 →</a></p>
+</section>
+
+{{/* ===== 板块三：方法论 / 持续行动 ===== */}}
+<section class="curated-section">
+  <div class="curated-header">
+    <span class="curated-icon">🔁</span>
+    <div>
+      <h2><a href="/categories/方法论/">方法论 / 持续行动</a></h2>
+      <p class="curated-desc">反脆弱思维 · 行动第一 · 写作输出。慢慢来，不要停。</p>
+    </div>
+  </div>
+  <ul class="curated-list">
+    <li><a href="/posts/G0h0UDHauImHmWXeeFk_3w/">遍历性的启示</a><span class="curated-tag">推荐</span></li>
+    <li><a href="/posts/DLXPCyRRb5mthJYly-6ulA/">收获很大的复利人生课</a></li>
+    <li><a href="/posts/QoNJa5Y9NAWeiD_rJhdsZw/">量化——从道理到实践的桥梁</a></li>
+    <li><a href="/posts/6MYeEaZvdPAna_KAvy0p0Q/">普通人最可能建立的优势</a></li>
+    <li><a href="/posts/h2NuNCRw0OoTloyBYcBwsw/">未来的公司形态和"一人公司"所需要的能力</a></li>
+  </ul>
+  <p class="curated-more"><a href="/categories/方法论/">查看全部 →</a></p>
+</section>
+
+<div class="home-divider"></div>
+
+{{/* ===== 最新动态 ===== */}}
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
 {{- if $pages }}
 <section class="recent-posts">
-  <h2 class="section-title">最新文章</h2>
-  {{- range first 6 $pages }}
+  <h2 class="section-title">最新动态</h2>
+  {{- range first 5 $pages }}
   <article class="post-entry">
     <header class="entry-header">
       <h2 class="entry-hint-parent">{{- .Title -}}</h2>
@@ -54,7 +98,6 @@
     <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
   </article>
   {{- end }}
-
   <div class="see-all">
     <a href="/archives/">查看全部文章 →</a>
   </div>

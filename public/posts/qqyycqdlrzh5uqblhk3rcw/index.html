@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>我用影刀自动抓取知识星球内容，节省了20个小时 | 金哥的思考</title>
+<meta name="keywords" content="">
+<meta name="description" content="用影刀RPA整理自己在知识星球上发布过的内容，帮我节省了20小时">
+<meta name="author" content="金金视界">
+<link rel="canonical" href="https://jinjin123.com/posts/qqyycqdlrzh5uqblhk3rcw/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.c0fdd91bfa41e3485b101432ab58f0ddc9bd84b1f0d2f9df007fbf7096a62781.css" integrity="sha256-wP3ZG/pB40hbEBQyq1jw3cm9hLHw0vnfAH&#43;/cJamJ4E=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jinjin123.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jinjin123.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jinjin123.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jinjin123.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jinjin123.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://jinjin123.com/posts/qqyycqdlrzh5uqblhk3rcw/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+.home-banner-wrap{margin:0 0 1.25rem 0}
+.home-banner{width:100%;display:block;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+@media (max-width:768px){.home-banner-wrap{margin:0 0 1rem 0}.home-banner{border-radius:14px}}
+</style>
+<meta property="og:url" content="https://jinjin123.com/posts/qqyycqdlrzh5uqblhk3rcw/">
+  <meta property="og:site_name" content="金哥的思考">
+  <meta property="og:title" content="我用影刀自动抓取知识星球内容，节省了20个小时">
+  <meta property="og:description" content="用影刀RPA整理自己在知识星球上发布过的内容，帮我节省了20小时">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-25T00:00:00+08:00">
+    <meta property="article:modified_time" content="2025-06-25T00:00:00+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="我用影刀自动抓取知识星球内容，节省了20个小时">
+  <meta name="twitter:description" content="用影刀RPA整理自己在知识星球上发布过的内容，帮我节省了20小时">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jinjin123.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "我用影刀自动抓取知识星球内容，节省了20个小时",
+      "item": "https://jinjin123.com/posts/qqyycqdlrzh5uqblhk3rcw/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "我用影刀自动抓取知识星球内容，节省了20个小时",
+  "name": "我用影刀自动抓取知识星球内容，节省了20个小时",
+  "description": "用影刀RPA整理自己在知识星球上发布过的内容，帮我节省了20小时",
+  "keywords": [
+    
+  ],
+  "articleBody": "前段时间，我开始整理自己在知识星球上发布过的内容，想交给 AI 帮我分析和归类。\n但 知识星球不支持内容导出，也没有开放 API 接口 ，几乎只能手动复制粘贴。\n而过往几年的帖子已经积累了几千条，手动保存效率低，还易出错。最近接触到一款自动化工具—— 影刀 ，参考教程学习和摸索之后，搭建了一个抓取流程。\n今天，就把这个流程详细分享出来，如果你也想把星球内容备份下来，这篇应该对你有用。\n✳️ 影刀是什么？\n影刀是一款 零代码自动化办公软件 ，可以模拟人对网页的操作，比如点击、滚动、输入、复制粘贴等。它就像一个可以被编程的“数字助理”，适合处理网页上的大量的重复性任务。\n你可以在影刀官网下载并注册账号。安装完成后，新建一个流程应用，就可以开始搭建了。\n📄 我的知识星球抓取流程（全图解）\n👇下面是我完整流程截图，一步步讲解设置逻辑：\n① 打开网页\n在流程第一步中设置自动打开浏览器（建议使用 Chrome），并跳转到你的知识星球主页。\n② 滚动加载全部内容\n知识星球是“无限下拉”结构，需要加入一个循环，让页面不断往下滑，直到加载出所有内容。\n如何判断“加载完成”？用一个 IF元素可见 判断页面是否出现“没有更多了”这几个字。\n记得要在“元素库中选择”，弹出窗口后，ctrl+鼠标点击“没有更多了”这个元素，点击确认\n③ 设置持续下拉动作\n为了配合上一步，这里补充设置持续滚动动作，直到触发停止条件。\n④ 判断是否有“展开全部”\n很多帖子篇幅较长，初始是折叠状态。你需要设置一个判断：如果当前帖子有“展开全部”的按钮，就执行点击。\n⑤ 点击展开全部\n在判断成立的条件下，添加点击动作，展开完整内容。\n⑥ 批量抓取数据\n所有帖子内容加载并展开后，开始批量提取数据。建议提取字段包括：\n作者昵称、发布时间、正文内容\n⑦ 将抓取结果合并为文本\n将提取到的内容拼接为一段纯文本，每条记录用换行隔开，变量名设为 joined-text。\n⑧ 写入本地文档\n最后一步，把 joined-text 内容写入到本地文本文档中。你可以提前创建一个.txt 文件（比如叫“知识星球1.txt”），流程就会自动写入内容。\n💡 补充说明\n整个流程搭建下来，大概需要半小时到一小时。影刀的界面比较直观，流程也能不断调试调整， 关键是每一步都先测试好再往下接 。\n过程中难免会遇到小问题，比如元素选择失败、页面未完全加载等，保持耐心，一定可以解决的。\n📩 模板领取 希望之后可以把更多实用工具、流程优化和 AI 应用的思路慢慢分享出来。\n👉 你有用影刀自动抓过哪些内容吗？欢迎留言交流。\n",
+  "wordCount" : "1001",
+  "inLanguage": "zh",
+  "datePublished": "2025-06-25T00:00:00+08:00",
+  "dateModified": "2025-06-25T00:00:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "金金视界"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jinjin123.com/posts/qqyycqdlrzh5uqblhk3rcw/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "金哥的思考",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinjin123.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jinjin123.com/" accesskey="h" title="金哥的思考 (Alt + H)">金哥的思考</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jinjin123.com/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/dashboard/" title="定投面板">
+                    <span>定投面板</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jinjin123.com/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jinjin123.com/">主页</a>&nbsp;»&nbsp;<a href="https://jinjin123.com/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      我用影刀自动抓取知识星球内容，节省了20个小时
+    </h1>
+    <div class="post-meta"><span title='2025-06-25 00:00:00 +0800 CST'>2025年6月25日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>1001 字</span>&nbsp;·&nbsp;<span>金金视界</span>
+
+</div>
+  </header> 
+
+  <div class="post-content"><p>前段时间，我开始整理自己在知识星球上发布过的内容，想交给 AI 帮我分析和归类。</p>
+<p>但 <strong>知识星球不支持内容导出，也没有开放 API 接口</strong> ，几乎只能手动复制粘贴。</p>
+<p>而过往几年的帖子已经积累了几千条，手动保存效率低，还易出错。最近接触到一款自动化工具—— <strong>影刀</strong> ，参考教程学习和摸索之后，搭建了一个抓取流程。</p>
+<p>今天，就把这个流程详细分享出来，如果你也想把星球内容备份下来，这篇应该对你有用。</p>
+<p>✳️ 影刀是什么？</p>
+<p>影刀是一款 <strong>零代码自动化办公软件</strong> ，可以模拟人对网页的操作，比如点击、滚动、输入、复制粘贴等。它就像一个可以被编程的“数字助理”，适合处理网页上的大量的重复性任务。</p>
+<p>你可以在影刀官网下载并注册账号。安装完成后，新建一个流程应用，就可以开始搭建了。</p>
+<p>📄 我的知识星球抓取流程（全图解）</p>
+<p><img alt="图片" loading="lazy" src="/posts/qqyycqdlrzh5uqblhk3rcw/images/img_1.jpg"></p>
+<blockquote>
+<p>👇下面是我完整流程截图，一步步讲解设置逻辑：</p>
+</blockquote>
+<hr>
+<p>① 打开网页</p>
+<p>在流程第一步中设置自动打开浏览器（建议使用 Chrome），并跳转到你的知识星球主页。</p>
+<p><img alt="图片" loading="lazy" src="/posts/qqyycqdlrzh5uqblhk3rcw/images/img_2.jpg"></p>
+<hr>
+<p>② 滚动加载全部内容</p>
+<p>知识星球是“无限下拉”结构，需要加入一个循环，让页面不断往下滑，直到加载出所有内容。</p>
+<p>如何判断“加载完成”？用一个 IF元素可见 判断页面是否出现“没有更多了”这几个字。</p>
+<p>记得要在“元素库中选择”，弹出窗口后，ctrl+鼠标点击“没有更多了”这个元素，点击确认</p>
+<p><img alt="图片" loading="lazy" src="/posts/qqyycqdlrzh5uqblhk3rcw/images/img_3.jpg"></p>
+<hr>
+<p>③ 设置持续下拉动作</p>
+<p>为了配合上一步，这里补充设置持续滚动动作，直到触发停止条件。</p>
+<p><img alt="图片" loading="lazy" src="/posts/qqyycqdlrzh5uqblhk3rcw/images/img_4.jpg"></p>
+<hr>
+<p>④ 判断是否有“展开全部”</p>
+<p>很多帖子篇幅较长，初始是折叠状态。你需要设置一个判断：如果当前帖子有“展开全部”的按钮，就执行点击。</p>
+<p><img alt="图片" loading="lazy" src="/posts/qqyycqdlrzh5uqblhk3rcw/images/img_5.jpg"></p>
+<hr>
+<p>⑤ 点击展开全部</p>
+<p>在判断成立的条件下，添加点击动作，展开完整内容。</p>
+<p><img alt="图片" loading="lazy" src="/posts/qqyycqdlrzh5uqblhk3rcw/images/img_6.jpg"></p>
+<hr>
+<p>⑥ 批量抓取数据</p>
+<p>所有帖子内容加载并展开后，开始批量提取数据。建议提取字段包括：</p>
+<p>作者昵称、发布时间、正文内容</p>
+<p><img alt="图片" loading="lazy" src="/posts/qqyycqdlrzh5uqblhk3rcw/images/img_7.jpg"> <img alt="图片" loading="lazy" src="/posts/qqyycqdlrzh5uqblhk3rcw/images/img_8.jpg"></p>
+<hr>
+<p>⑦ 将抓取结果合并为文本</p>
+<p>将提取到的内容拼接为一段纯文本，每条记录用换行隔开，变量名设为 joined-text。</p>
+<p><img alt="图片" loading="lazy" src="/posts/qqyycqdlrzh5uqblhk3rcw/images/img_9.jpg"></p>
+<hr>
+<p>⑧ 写入本地文档</p>
+<p>最后一步，把 joined-text 内容写入到本地文本文档中。你可以提前创建一个.txt 文件（比如叫“知识星球1.txt”），流程就会自动写入内容。</p>
+<p><img alt="图片" loading="lazy" src="/posts/qqyycqdlrzh5uqblhk3rcw/images/img_10.jpg"></p>
+<hr>
+<p>💡 补充说明</p>
+<p>整个流程搭建下来，大概需要半小时到一小时。影刀的界面比较直观，流程也能不断调试调整， <strong>关键是每一步都先测试好再往下接</strong> 。</p>
+<p>过程中难免会遇到小问题，比如元素选择失败、页面未完全加载等，保持耐心，一定可以解决的。</p>
+<p>📩 模板领取
+希望之后可以把更多实用工具、流程优化和 AI 应用的思路慢慢分享出来。</p>
+<p>👉 你有用影刀自动抓过哪些内容吗？欢迎留言交流。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://jinjin123.com/posts/qq46ogemp3dja1bf4ry7ng/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>兰州敦煌自驾小记</span>
+  </a>
+  <a class="next" href="https://jinjin123.com/posts/8upy-mot7qrpjzk3qv2n0q/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>比特币多50%的定投方法—分区间定投概述</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://jinjin123.com/">金哥的思考</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
